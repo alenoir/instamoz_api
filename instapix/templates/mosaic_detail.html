@@ -1,0 +1,3 @@
+{% for pixel in mosaic.pixels.all %}
+<div style="width:10px; height:10px; background-color:#{{pixel.color}}; position:absolute; top:{{pixel.x}}; left:{{pixel.y}};"></div>
+{% endfor %}
