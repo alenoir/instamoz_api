@@ -62,7 +62,7 @@ WSGI_APPLICATION = 'Instamoz.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/Users/antoinelenoir/Documents/Aptana Studio 3 Workspace/Instamoz/instamoz.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'instamoz.sqlite3'),
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
