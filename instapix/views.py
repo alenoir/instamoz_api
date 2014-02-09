@@ -41,6 +41,7 @@ class MosaicRealtime(View):
         return HttpResponse(challenge, content_type="application/json")
     
     def post(self, request, *args, **kwargs):
+        print request.body
         json_data = json.loads(request.body)
         for object in json_data:
             subscription_id = object['subscription_id']
