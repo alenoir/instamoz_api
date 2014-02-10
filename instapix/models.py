@@ -9,9 +9,9 @@ from django.core.exceptions import ValidationError
 api = InstagramAPI(client_id=settings.INSTAGRAM_CONFIG['client_id'], client_secret=settings.INSTAGRAM_CONFIG['client_secret'])
 
 USER_SUBSCRIPTION = 'user'
-GEO_SUBSCRIPTION = 'user'
-TAG_SUBSCRIPTION = 'user'
-LOC_SUBSCRIPTION = 'user'
+GEO_SUBSCRIPTION = 'geography'
+TAG_SUBSCRIPTION = 'tag'
+LOC_SUBSCRIPTION = 'location'
 SUBSCRIPTION_TYPE =(
     (USER_SUBSCRIPTION, 'User'),
     (GEO_SUBSCRIPTION, 'Geographie'),
