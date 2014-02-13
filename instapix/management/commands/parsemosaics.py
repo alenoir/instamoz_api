@@ -1,5 +1,6 @@
-import Image
 import struct
+
+from PIL import Image
 
 from django.core.management.base import BaseCommand
 from instapix.models import Mosaic, Pixel
