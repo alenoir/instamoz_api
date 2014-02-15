@@ -1,3 +1,7 @@
 {% for pixel in mosaic.pixels.all %}
+{% if pixel.pic %}
 <div style="width:10px; height:10px; background-color:#{{pixel.color}}; position:absolute; top:{{pixel.x}}; left:{{pixel.y}};"></div>
+{% else %}
+<img style="width:10px; height:10px; background-color:#{{pixel.color}}; position:absolute; top:{{pixel.x}}; left:{{pixel.y}}; border:none;" src="{{pixel.pic.picture_url_high}}" />
+{% endif %}
 {% endfor %}
