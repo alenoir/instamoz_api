@@ -50,6 +50,9 @@ class Subscription(models.Model):
     update_date = models.DateTimeField(auto_now_add=True)
     create_date = models.DateTimeField(auto_now_add=True,blank=True)
     
+    def __unicode__(self):
+        return u'Type : %s, Tags : %s' % (self.type, self.tag)
+    
     def clean(self):
         if self.type == GEO_SUBSCRIPTION and (self.location_lat is None or self.location_lng is None or self.radius is None):
             raise ValidationError('For goegraphy subscription, lat, lng and radius required')
@@ -152,10 +155,7 @@ class Subscription(models.Model):
                 #for mosaic in mosaics.all():
                 #    mosaic.pics.add(pic)
                 #    mosaic.save()
-                    
-    def __unicode__(self):
-        return u'%s' % self.subscription_id
-    
+                        
 class Mosaic(models.Model):
     name = models.CharField(max_length=255, blank=True)
     image = models.ImageField(upload_to="mosaic/")
