@@ -2,6 +2,7 @@ import json
 import urllib, cStringIO
 import struct
 
+from stdimage import StdImageField
 from PIL import Image
 from pprint import pprint
 from colormath.color_objects import RGBColor
@@ -104,11 +105,10 @@ class Subscription(models.Model):
                 except:
                     pass
                    
-                filepath = settings.STATIC_URL + 'pic/'
                 fileimage = cStringIO.StringIO(urllib.urlopen(pic.picture_url_high).read())
                 img = Image.open(fileimage)
-                img = img.resize((1, 1), Image.ANTIALIAS)
-                pixels = list(img.getdata())
+                imgResze = img.resize((1, 1), Image.ANTIALIAS)
+                pixels = list(imgResze.getdata())
                 
                 color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
                 color_hex = color_insta.get_rgb_hex()
@@ -125,11 +125,8 @@ class Subscription(models.Model):
                     
                 if pixel_lte:
                     pixel_color = RGBColor()
-                    pixel_color.set_from_rgb_hex('#'+pixel_gte.color)
+                    pixel_color.set_from_rgb_hex('#'+pixel_lte.color)
                     diff_lte = color_insta.delta_e(pixel_color)
-                
-                print diff_gte
-                print diff_lte
                 
                 if diff_gte > pixel_lte:
                     diff = diff_lte
@@ -137,16 +134,20 @@ class Subscription(models.Model):
                 else:
                     diff = diff_gte
                     pixel = pixel_gte
-                    
-                print pixel.id
-                    
+                                        
                 pic.save()
                 pixel.pic = pic
                 pixel.save()
                 
                 #print hexaColor
-                
-                # urllib.urlretrieve(pic.picture_url_high, filepath + str(pic.id) + '_' + pic.picture_id + '.jpg')
+                try:
+                    img = img.resize((10, 10), Image.ANTIALIAS)
+                    filepath = settings.MEDIA_ROOT + '/pics/%s.jpg' % pic.id
+                    img.save(filepath, 'JPEG')
+                except:
+                    pic.delete()
+
+                #urllib.urlretrieve(pic.picture_url_high, filepath + str(pic.id) + '_' + pic.picture_id + '.jpg')
     
                 #for mosaic in mosaics.all():
                 #    mosaic.pics.add(pic)
@@ -159,15 +160,63 @@ class Mosaic(models.Model):
     name = models.CharField(max_length=255, blank=True)
     image = models.ImageField(upload_to="mosaic/")
     tags = models.ManyToManyField(Tag)
-    location_lat = models.FloatField(blank=True)
-    location_lng = models.FloatField(blank=True)
+    location_lat = models.FloatField()
+    location_lng = models.FloatField()
     subscriptions = models.ManyToManyField(Subscription, related_name="mosaics")
-    is_parse = models.BooleanField()
+    is_parse = models.BooleanField(default=False)
     update_date = models.DateTimeField(auto_now_add=True)
     create_date = models.DateTimeField(auto_now_add=True,blank=True)
 
     def __unicode__(self):
         return self.name
+    
+    def parse_pixesl(self):
+        image = Image.open(self.image.path)
+        pixels = list(image.getdata())
+        width, height = image.size
+        pixels = [pixels[i * width:(i + 1) * width] for i in xrange(height)]
+        
+        pixelSize = 10
+        middlePixel = pixelSize/2
+        
+        i=middlePixel
+        coorX=0
+        while i < width:
+            
+            if i<width:
+                j=middlePixel
+                coorY=0
+                while j < height:
+                    
+                    if j<height:
+                        
+                        hexaColor = struct.pack('BBB',*pixels[i][j]).encode('hex')
+                        try:
+                            pix = Pixel.objects.get(x=coorX,y=coorY,mosaic=self)
+                        except Pixel.DoesNotExist:
+                            #self.stdout.write('Add pixel %s,%s' % (coorX, coorY))
+                            pix = Pixel.objects.create(x=coorX,y=coorY,mosaic=self)
+                            
+                        #self.stdout.write('Update pixel %s,%s with color : %s' % (coorX, coorY, hexaColor))
+                        pix.color = hexaColor
+                        pix.save()
+                    j=j+pixelSize
+                    coorY=coorY+pixelSize
+            i=i+pixelSize
+            coorX=coorX+pixelSize
+        self.is_parse = True
+        self.save()
+                
+    def save(self, size=(620, 620)):
+        """
+        Save Photo after ensuring it is not blank.  Resize as needed.
+        """
+
+        super(Mosaic, self).save()
+
+        image = Image.open(self.image.path)  
+        image = image.resize(size, Image.ANTIALIAS)  
+        image.save(self.image.path) 
     
 class InstaPic(models.Model):
     link = models.TextField()
