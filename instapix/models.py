@@ -119,43 +119,38 @@ class Subscription(models.Model):
                 color_hex = color_hex.replace("#", "")
                 pic.color = color_hex
                 
-                pixel_gte = Pixel.objects.order_by('color').filter(color__gte=pic.color).exclude(pic__isnull=False).first()
-                pixel_lte = Pixel.objects.order_by('-color').filter(color__lte=pic.color).exclude(pic__isnull=False).first()
-                
-                if pixel_gte:
-                    pixel_color = RGBColor()
-                    pixel_color.set_from_rgb_hex('#'+pixel_gte.color)
-                    diff_gte = color_insta.delta_e(pixel_color)
+                for mosaic in self.mosaics.all():
+                    pixel_gte = Pixel.objects.order_by('color').filter(color__gte=pic.color).filter(mosaic=mosaic).exclude(pic__isnull=False).first()
+                    pixel_lte = Pixel.objects.order_by('-color').filter(color__lte=pic.color).filter(mosaic=mosaic).exclude(pic__isnull=False).first()
                     
-                if pixel_lte:
-                    pixel_color = RGBColor()
-                    pixel_color.set_from_rgb_hex('#'+pixel_lte.color)
-                    diff_lte = color_insta.delta_e(pixel_color)
-                
-                if diff_gte > pixel_lte:
-                    diff = diff_lte
-                    pixel = pixel_lte
-                else:
-                    diff = diff_gte
-                    pixel = pixel_gte
-                                        
-                pic.save()
-                pixel.pic = pic
-                pixel.save()
+                    if pixel_gte:
+                        pixel_color = RGBColor()
+                        pixel_color.set_from_rgb_hex('#'+pixel_gte.color)
+                        diff_gte = color_insta.delta_e(pixel_color)
+                        
+                    if pixel_lte:
+                        pixel_color = RGBColor()
+                        pixel_color.set_from_rgb_hex('#'+pixel_lte.color)
+                        diff_lte = color_insta.delta_e(pixel_color)
+                    
+                    if diff_gte > pixel_lte:
+                        diff = diff_lte
+                        pixel = pixel_lte
+                    else:
+                        diff = diff_gte
+                        pixel = pixel_gte
+                                            
+                    pic.save()
+                    pixel.pic = pic
+                    pixel.save()
                 
                 #print hexaColor
                 try:
-                    img = img.resize((10, 10), Image.ANTIALIAS)
+                    img = img.resize((self.mosaic.pixel_size, self.mosaic.pixel_size), Image.ANTIALIAS)
                     filepath = settings.MEDIA_ROOT + '/pics/%s.jpg' % pic.id
                     img.save(filepath, 'JPEG')
                 except:
                     pic.delete()
-
-                #urllib.urlretrieve(pic.picture_url_high, filepath + str(pic.id) + '_' + pic.picture_id + '.jpg')
-    
-                #for mosaic in mosaics.all():
-                #    mosaic.pics.add(pic)
-                #    mosaic.save()
                         
 class Mosaic(models.Model):
     name = models.CharField(max_length=255, blank=True)
@@ -164,6 +159,7 @@ class Mosaic(models.Model):
     location_lat = models.FloatField()
     location_lng = models.FloatField()
     subscriptions = models.ManyToManyField(Subscription, related_name="mosaics")
+    pixel_size = models.IntegerField()    
     is_parse = models.BooleanField(default=False)
     update_date = models.DateTimeField(auto_now_add=True)
     create_date = models.DateTimeField(auto_now_add=True,blank=True)
@@ -178,7 +174,7 @@ class Mosaic(models.Model):
         width, height = image.size
         pixels = [pixels[i * width:(i + 1) * width] for i in xrange(height)]
         
-        pixelSize = 10
+        pixelSize = self.pixel_size
         middlePixel = pixelSize/2
         
         i=middlePixel
