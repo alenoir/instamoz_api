@@ -4,7 +4,3 @@
 local_settings.py
 *.sqlite3
 static/media
-<<<<<<< HEAD
-
-=======
->>>>>>> 91565181091645fbdd20eee8f2e1105b296e6ecf
