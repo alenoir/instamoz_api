@@ -84,7 +84,7 @@ class Subscription(models.Model):
         
     def update_subscription(self):
         self.set_last_update()
-        mosaics = self.mosaics
+
         if self.type == GEO_SUBSCRIPTION:
             recent_media, next = api.geography_recent_media(20, '', self.object_id)
  
@@ -92,65 +92,61 @@ class Subscription(models.Model):
             recent_media, next = api.tag_recent_media(20, '', self.tag)
                     
         for media in recent_media:
+            print media.id
             if not InstaPic.objects.filter(picture_id=media.id).exists():
-                pic = InstaPic()
-                pic.link = media.link
-                pic.user_id = media.user.id
-                pic.user_name = media.user.username
-                pic.user_profile_picture = media.user.profile_picture
-                pic.picture_id = media.id
-                pic.picture_url_low = media.images['low_resolution'].url
-                pic.picture_url_high = media.images['standard_resolution'].url
-                #pic.color = 
                 try:
-                    pic.location_lat = media.location.point.latitude
-                    pic.location_lng = media.location.point.longitude
-                    pic.location_name = media.location.name
+                    fileimage = cStringIO.StringIO(urllib.urlopen(media.images['standard_resolution'].url).read())
+                    img = Image.open(fileimage)
+                    imgResze = img.resize((1, 1), Image.ANTIALIAS)
+                    pixels = list(imgResze.getdata())
                 except:
-                    pass
-                   
-                fileimage = cStringIO.StringIO(urllib.urlopen(pic.picture_url_high).read())
-                img = Image.open(fileimage)
-                imgResze = img.resize((1, 1), Image.ANTIALIAS)
-                pixels = list(imgResze.getdata())
+                    continue
                 
                 color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
                 color_hex = color_insta.get_rgb_hex()
                 color_hex = color_hex.replace("#", "")
-                pic.color = color_hex
                 
                 for mosaic in self.mosaics.all():
-                    pixel_gte = Pixel.objects.order_by('color').filter(color__gte=pic.color).filter(mosaic=mosaic).exclude(pic__isnull=False).first()
-                    pixel_lte = Pixel.objects.order_by('-color').filter(color__lte=pic.color).filter(mosaic=mosaic).exclude(pic__isnull=False).first()
-                    
-                    if pixel_gte:
-                        pixel_color = RGBColor()
-                        pixel_color.set_from_rgb_hex('#'+pixel_gte.color)
-                        diff_gte = color_insta.delta_e(pixel_color)
-                        
-                    if pixel_lte:
-                        pixel_color = RGBColor()
-                        pixel_color.set_from_rgb_hex('#'+pixel_lte.color)
-                        diff_lte = color_insta.delta_e(pixel_color)
-                    
-                    if diff_gte > pixel_lte:
-                        diff = diff_lte
-                        pixel = pixel_lte
-                    else:
-                        diff = diff_gte
-                        pixel = pixel_gte
-                                            
-                    pic.save()
-                    pixel.pic = pic
-                    pixel.save()
-                
-                #print hexaColor
-                try:
-                    img = img.resize((self.mosaic.pixel_size, self.mosaic.pixel_size), Image.ANTIALIAS)
-                    filepath = settings.MEDIA_ROOT + '/pics/%s.jpg' % pic.id
-                    img.save(filepath, 'JPEG')
-                except:
-                    pic.delete()
+                    for pixel in mosaic.pixels.filter(pic__isnull=True):
+                        pixel_color = RGBColor(pixel.r_color,pixel.g_color,pixel.b_color)
+                        delta_e = color_insta.delta_e(pixel_color)
+                        print '#'+pixel.color 
+                        print color_insta.get_rgb_hex() 
+                        print delta_e 
+                        if delta_e < 5:
+                            print '>>> delta_e ok'
+                            pic = InstaPic()
+                            pic.link = media.link
+                            pic.user_id = media.user.id
+                            pic.user_name = media.user.username
+                            pic.user_profile_picture = media.user.profile_picture
+                            pic.picture_id = media.id
+                            pic.picture_url_low = media.images['low_resolution'].url
+                            pic.picture_url_high = media.images['standard_resolution'].url
+                            pic.color = color_hex
+                            pic.r_color = pixels[0][0]
+                            pic.g_color = pixels[0][1]
+                            pic.b_color = pixels[0][2]
+                            try:
+                                pic.location_lat = media.location.point.latitude
+                                pic.location_lng = media.location.point.longitude
+                                pic.location_name = media.location.name
+                            except:
+                                pass
+                            
+                            pic.save()
+                            pixel.pic = pic
+                            pixel.save()
+
+                            try:
+                                img = img.resize((mosaic.pixel_size, mosaic.pixel_size), Image.ANTIALIAS)
+                                filepath = settings.MEDIA_ROOT + '/pics/%s.jpg' % pic.id
+                                img.save(filepath, 'JPEG')
+                            except IOError as e:
+                                print "I/O error({0}): {1}".format(e.errno, e.strerror)
+                                pic.delete()
+                            
+                            break
                         
 class Mosaic(models.Model):
     name = models.CharField(max_length=255, blank=True)
@@ -188,7 +184,6 @@ class Mosaic(models.Model):
                     print j
                     print i
                     if j<height:
-                        
                         hexaColor = struct.pack('BBB',*pixels[i][j]).encode('hex')
                         try:
                             pix = Pixel.objects.get(x=coorX,y=coorY,mosaic=self)
@@ -200,6 +195,9 @@ class Mosaic(models.Model):
                         
                         #self.stdout.write('Update pixel %s,%s with color : %s' % (coorX, coorY, hexaColor))
                         pix.color = hexaColor
+                        pix.r_color = pixels[i][j][0]
+                        pix.g_color = pixels[i][j][1]
+                        pix.b_color = pixels[i][j][2]
                         pix.save()
                     j=j+pixelSize
                     coorY=coorY+pixelSize
@@ -228,6 +226,9 @@ class InstaPic(models.Model):
     picture_url_low = models.TextField()
     picture_url_high = models.TextField()
     color = models.CharField(max_length=6, blank=True, default='')
+    r_color = models.IntegerField(max_length=3, blank=True, null=True)
+    g_color = models.IntegerField(max_length=3, blank=True, null=True)
+    b_color = models.IntegerField(max_length=3, blank=True, null=True)
     location_lat = models.FloatField(blank=True, null=True)
     location_lng = models.FloatField(blank=True, null=True)
     location_name = models.CharField(max_length=255, blank=True, null=True, default='')
@@ -246,10 +247,13 @@ class InstaPic(models.Model):
     
 class Pixel(models.Model):
     color = models.CharField(max_length=6, blank=True, default='')
+    r_color = models.IntegerField(max_length=3, blank=True, null=True)
+    g_color = models.IntegerField(max_length=3, blank=True, null=True)
+    b_color = models.IntegerField(max_length=3, blank=True, null=True)
     x = models.IntegerField(blank=True, default='')
     y = models.IntegerField(blank=True, default='')
     mosaic = models.ForeignKey(Mosaic, related_name="pixels",on_delete=models.CASCADE)
-    pic = models.ForeignKey(InstaPic, blank=True, null=True, related_name="pixels")
+    pic = models.ForeignKey(InstaPic, blank=True, null=True, on_delete=models.SET_NULL, related_name="pixels")
     update_date = models.DateTimeField(auto_now_add=True)
     create_date = models.DateTimeField(auto_now_add=True,blank=True)
     
