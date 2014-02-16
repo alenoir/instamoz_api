@@ -3,4 +3,8 @@
 *.pyc
 local_settings.py
 *.sqlite3
+<<<<<<< HEAD
 static/media
+=======
+static/media
+>>>>>>> 46e41535b125fd8dbabee9514056393de2127225
