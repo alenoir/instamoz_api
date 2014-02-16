@@ -2,6 +2,7 @@ import json
 import urllib, cStringIO
 import struct
 
+from django.db import transaction
 from stdimage import StdImageField
 from PIL import Image
 from pprint import pprint
@@ -170,6 +171,7 @@ class Mosaic(models.Model):
     def __unicode__(self):
         return self.name
     
+    @transaction.commit_on_success
     def parse_pixesl(self):
         image = Image.open(self.image.path)
         pixels = list(image.getdata())
@@ -187,16 +189,19 @@ class Mosaic(models.Model):
                 j=middlePixel
                 coorY=0
                 while j < height:
-                    
+                    print j
+                    print i
                     if j<height:
                         
                         hexaColor = struct.pack('BBB',*pixels[i][j]).encode('hex')
                         try:
                             pix = Pixel.objects.get(x=coorX,y=coorY,mosaic=self)
+                            print "update pixel %s" % pix.id   
                         except Pixel.DoesNotExist:
                             #self.stdout.write('Add pixel %s,%s' % (coorX, coorY))
+                            print "add pixel"
                             pix = Pixel.objects.create(x=coorX,y=coorY,mosaic=self)
-                            
+                        
                         #self.stdout.write('Update pixel %s,%s with color : %s' % (coorX, coorY, hexaColor))
                         pix.color = hexaColor
                         pix.save()
@@ -247,7 +252,7 @@ class Pixel(models.Model):
     color = models.CharField(max_length=6, blank=True, default='')
     x = models.IntegerField(blank=True, default='')
     y = models.IntegerField(blank=True, default='')
-    mosaic = models.ForeignKey(Mosaic, related_name="pixels")
+    mosaic = models.ForeignKey(Mosaic, related_name="pixels",on_delete=models.CASCADE)
     pic = models.ForeignKey(InstaPic, blank=True, null=True, related_name="pixels")
     update_date = models.DateTimeField(auto_now_add=True)
     create_date = models.DateTimeField(auto_now_add=True,blank=True)
