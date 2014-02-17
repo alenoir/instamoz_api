@@ -16,7 +16,7 @@ class Command(BaseCommand):
                 print pixel.y
                 print '-------------'
                 try:
-                    img.paste(Image.open(filepath), (pixel.x,pixel.y))
+                    img.paste(Image.open(filepath), (pixel.y,pixel.x))
                 except:
                     #pixel.pic.delete()
                     pass
