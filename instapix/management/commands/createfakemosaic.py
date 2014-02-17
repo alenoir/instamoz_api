@@ -12,10 +12,8 @@ class Command(BaseCommand):
             img = Image.new('RGB',(620,620), "white")
             for pixel in mosaic.pixels.filter(pic__isnull=False):
                 filepath = settings.MEDIA_ROOT + '/pics/%s.jpg' % pixel.pic.id
-                print pixel.x
-                print pixel.y
                 try:
-                    img.paste(Image.open(filepath), (pixel.x,pixel.y))
+                    img.paste(Image.open(filepath), (0,0,pixel.x,pixel.y))
                 except:
                     pixel.pic.delete()
                     pass
