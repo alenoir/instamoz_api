@@ -9,6 +9,8 @@ from instapix.models import Mosaic, Subscription
 from django.http import HttpResponse
 from instagram.client import InstagramAPI
 from django.conf import settings
+from rest_framework import generics
+from instapix.serializer import MosaicSerializer
 
 api = InstagramAPI(client_id=settings.INSTAGRAM_CONFIG['client_id'], client_secret=settings.INSTAGRAM_CONFIG['client_secret'])
 
@@ -52,3 +54,12 @@ class MosaicRealtime(View):
                 pass
                 
         return HttpResponse("ok")
+    
+class MosaicList(generics.ListCreateAPIView):
+    queryset = Mosaic.objects.all()
+    serializer_class = MosaicSerializer
+
+
+class MosaicDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Mosaic.objects.all()
+    serializer_class = MosaicSerializer
