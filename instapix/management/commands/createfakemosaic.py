@@ -13,9 +13,9 @@ class Command(BaseCommand):
             for pixel in mosaic.pixels.filter(pic__isnull=False):
                 filepath = settings.MEDIA_ROOT + '/pics/%s.jpg' % pixel.pic.id
                 try:
-                    img.paste(Image.open(filepath), (0,0,pixel.x,pixel.y))
+                    img.paste(Image.open(filepath), (pixel.x,pixel.y))
                 except:
-                    pixel.pic.delete()
+                    #pixel.pic.delete()
                     pass
             
             out_path = settings.MEDIA_ROOT + '/mosaic/bg_%s.jpg' % mosaic.id
