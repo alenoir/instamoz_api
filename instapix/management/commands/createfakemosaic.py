@@ -12,11 +12,14 @@ class Command(BaseCommand):
             img = Image.new('RGB',(620,620), "white")
             for pixel in mosaic.pixels.filter(pic__isnull=False):
                 filepath = settings.MEDIA_ROOT + '/pics/%s.jpg' % pixel.pic.id
+                print pixel.x
+                print pixel.y
+                print '-------------'
                 try:
                     img.paste(Image.open(filepath), (pixel.x,pixel.y))
                 except:
                     #pixel.pic.delete()
                     pass
-            
+
             out_path = settings.MEDIA_ROOT + '/mosaic/bg_%s.jpg' % mosaic.id
-            img.save(out_path, "JPEG")
+            img.save(out_path)
