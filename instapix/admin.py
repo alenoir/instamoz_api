@@ -6,7 +6,7 @@ class PixelAdmin(admin.ModelAdmin):
     search_fields = ['id']
 
 class InstaPicAdmin(admin.ModelAdmin):
-    list_display = ('image_tag', 'color_block', 'location_name', 'has_pixel')
+    list_display = ('image_tag', 'color_block', 'location_name', 'has_pixel', 'create_date')
     
 class SubscriptionAdmin(admin.ModelAdmin):
     list_display = ('subscription_id', 'type', 'last_update', 'tag', 'location_lat', 'location_lng')
