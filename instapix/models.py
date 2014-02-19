@@ -261,7 +261,8 @@ class InstaPic(models.Model):
         color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
         color_hex = color_insta.get_rgb_hex()
         color_hex = color_hex.replace("#", "")
-        delta_e = 100      
+        delta_e = 100  
+        pixel_asso = None    
         for subscription in self.subscriptions.all():
             for mosaic in subscription.mosaics.all():
                 for pixel in mosaic.pixels.filter(pic__isnull=True):
@@ -272,10 +273,11 @@ class InstaPic(models.Model):
                     #print delta_e_new 
                     if delta_e_new < delta_e:
                         delta_e = delta_e_new
+                        pixel_asso = pixel
         if delta_e < 5:
             print 'find pixel with delta %s' % delta_e
-            pixel.pic = self
-            pixel.save()
+            pixel_asso.pic = self
+            pixel_asso.save()
         else:
             self.delete()
         
