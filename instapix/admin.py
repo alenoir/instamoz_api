@@ -6,7 +6,7 @@ class MosaicAdmin(admin.ModelAdmin):
     search_fields = ['id']
     
 class PixelAdmin(admin.ModelAdmin):
-    list_display = ('mosaic', 'x', 'y', 'color_block', 'pic_color')
+    list_display = ('id', 'mosaic', 'x', 'y', 'color_block', 'pic_color')
     search_fields = ['id']
 
 class InstaPicAdmin(admin.ModelAdmin):

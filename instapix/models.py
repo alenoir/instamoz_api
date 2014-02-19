@@ -256,7 +256,7 @@ class InstaPic(models.Model):
         except IOError as e:
             print "I/O error({0}): {1}".format(e.errno, e.strerror)
             self.delete()
-            return
+            return True
         
         color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
         color_hex = color_insta.get_rgb_hex()
@@ -276,14 +276,14 @@ class InstaPic(models.Model):
                         pixel_asso = pixel
         print 'minimum delta_e %s' % delta_e
         if delta_e < 10:
-            print 'find pixel with delta %s' % delta_e
+            print 'set pixel %s with delta %s' % (pixel_asso.id,delta_e)
             pixel_asso.pic = self
             pixel_asso.save()
         else:
             self.delete()
         
     def has_pixel(self):
-        if self.pixels:
+        if self.pixels.count() >0:
             return True
         else:
             return False
