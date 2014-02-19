@@ -274,6 +274,7 @@ class InstaPic(models.Model):
                     if delta_e_new < delta_e:
                         delta_e = delta_e_new
                         pixel_asso = pixel
+        print 'minimum delta_e %s' % delta_e
         if delta_e < 5:
             print 'find pixel with delta %s' % delta_e
             pixel_asso.pic = self
