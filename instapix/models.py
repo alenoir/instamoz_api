@@ -163,7 +163,8 @@ class Mosaic(models.Model):
         
     def percent_complete(self):
         if self.pixels.all().count() > 0:
-            return self.pixels.filter(pic__isnull=False).count() / self.pixels.all().count() * 100
+            print float(12) / float(3844) * float(100)
+            return float(self.pixels.filter(pic__isnull=False).count()) / float(self.pixels.all().count()) * 100
         else:
             return 0
         
