@@ -155,6 +155,18 @@ class Mosaic(models.Model):
     def __unicode__(self):
         return self.name
     
+    def pixel_count(self):
+        return self.pixels.all().count()
+    
+    def pixel_associate_count(self):
+        return self.pixels.filter(pic__isnull=False).count()
+        
+    def percent_complete(self):
+        if self.pixels.all().count() > 0:
+            return self.pixels.filter(pic__isnull=False).count() / self.pixels.all().count() * 100
+        else:
+            return 0
+        
     @transaction.commit_on_success
     def parse_pixesl(self):
         image = Image.open(self.image.path)
@@ -243,6 +255,7 @@ class InstaPic(models.Model):
         except IOError as e:
             print "I/O error({0}): {1}".format(e.errno, e.strerror)
             self.delete()
+            return
         
         color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
         color_hex = color_insta.get_rgb_hex()
