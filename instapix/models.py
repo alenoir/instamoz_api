@@ -1,6 +1,7 @@
 import json
 import urllib, cStringIO
 import struct
+import os.path
 
 from django.db import transaction
 from stdimage import StdImageField
@@ -248,6 +249,11 @@ class InstaPic(models.Model):
         return u'#%s : <div style="float:right; background-color:#%s; width:10px; height:10px;"></div>' % (self.color,self.color)
     
     def find_related_pixel(self):
+        filepath = settings.MEDIA_ROOT + '/pics/%s.jpg' % self.id
+
+        if not os.path.isfile(filepath):
+            self.delete()
+            return True
         try:
             fileimage = cStringIO.StringIO(urllib.urlopen(self.picture_url_high).read())
             img = Image.open(fileimage)
