@@ -283,7 +283,7 @@ class InstaPic(models.Model):
                 print 'minimum delta_e %s' % delta_e
                 if delta_e < 15:
                     print 'set pixel %s with delta %s' % (pixel_asso.id,delta_e)
-                    pixel_asso.add(self)
+                    pixel_asso.pic = self
                     pixel_asso.save()
         self.save()
         
