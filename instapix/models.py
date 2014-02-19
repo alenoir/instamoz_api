@@ -169,7 +169,7 @@ class Mosaic(models.Model):
         else:
             return 0
         
-    @transaction.commit_on_success
+    #@transaction.commit_on_success
     def parse_pixesl(self):
         image = Image.open(self.image.path)
         pixels = list(image.getdata())
