@@ -176,6 +176,7 @@ class Mosaic(models.Model):
                     print j
                     print i
                     if j<height:
+                        print pixels[i][j]
                         hexaColor = struct.pack('BBB',*pixels[i][j]).encode('hex')
                         try:
                             pix = Pixel.objects.get(x=coorX,y=coorY,mosaic=self)
