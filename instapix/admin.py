@@ -9,7 +9,7 @@ class InstaPicAdmin(admin.ModelAdmin):
     list_display = ('image_tag', 'color_block', 'location_name')
     
 class SubscriptionAdmin(admin.ModelAdmin):
-    list_display = ('subscription_id', 'type', 'last_update')
+    list_display = ('subscription_id', 'type', 'last_update', 'tag', 'location_lat', 'location_lng')
 
 admin.site.register(Tag)
 admin.site.register(Mosaic)
