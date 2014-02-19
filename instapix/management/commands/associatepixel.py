@@ -12,7 +12,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         self.stdout.write('Begin fetch Instagram pics')
                 
-        for instapic in InstaPic.objects.filter(pixels__isnull=True):
+        for instapic in InstaPic.objects.filter(pixels__isnull=True)[0:100]:
             self.stdout.write('>>> Parse pic %s' % instapic.id)
             instapic.find_related_pixel()
             
