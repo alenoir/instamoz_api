@@ -81,7 +81,8 @@ class Subscription(models.Model):
     def set_last_update(self):
         self.last_update = datetime.now()
         self.save(add_usbscription=False)
-        
+    
+    @transaction.commit_on_success
     def update_subscription(self):
         self.set_last_update()
 
@@ -94,6 +95,7 @@ class Subscription(models.Model):
         for media in recent_media:
             print media.id
             if not InstaPic.objects.filter(picture_id=media.id).exists():
+                print media.id
                 try:
                     fileimage = cStringIO.StringIO(urllib.urlopen(media.images['standard_resolution'].url).read())
                     img = Image.open(fileimage)
@@ -106,48 +108,38 @@ class Subscription(models.Model):
                 color_hex = color_insta.get_rgb_hex()
                 color_hex = color_hex.replace("#", "")
                 
+                pic = InstaPic()
+                pic.link = media.link
+                pic.user_id = media.user.id
+                pic.user_name = media.user.username
+                pic.user_profile_picture = media.user.profile_picture
+                pic.picture_id = media.id
+                pic.picture_url_low = media.images['low_resolution'].url
+                pic.picture_url_high = media.images['standard_resolution'].url
+                pic.color = color_hex
+                pic.r_color = pixels[0][0]
+                pic.g_color = pixels[0][1]
+                pic.b_color = pixels[0][2]
+                try:
+                    pic.location_lat = media.location.point.latitude
+                    pic.location_lng = media.location.point.longitude
+                    pic.location_name = media.location.name
+                except:
+                    pass
+                
+                pic.save()
+                pic.subscriptions.add(self)
+                pic.save()
+                
                 for mosaic in self.mosaics.all():
-                    for pixel in mosaic.pixels.filter(pic__isnull=True):
-                        pixel_color = RGBColor(pixel.r_color,pixel.g_color,pixel.b_color)
-                        delta_e = color_insta.delta_e(pixel_color)
-                        print '#'+pixel.color 
-                        print color_insta.get_rgb_hex() 
-                        print delta_e 
-                        if delta_e < 5:
-                            print '>>> delta_e ok'
-                            pic = InstaPic()
-                            pic.link = media.link
-                            pic.user_id = media.user.id
-                            pic.user_name = media.user.username
-                            pic.user_profile_picture = media.user.profile_picture
-                            pic.picture_id = media.id
-                            pic.picture_url_low = media.images['low_resolution'].url
-                            pic.picture_url_high = media.images['standard_resolution'].url
-                            pic.color = color_hex
-                            pic.r_color = pixels[0][0]
-                            pic.g_color = pixels[0][1]
-                            pic.b_color = pixels[0][2]
-                            try:
-                                pic.location_lat = media.location.point.latitude
-                                pic.location_lng = media.location.point.longitude
-                                pic.location_name = media.location.name
-                            except:
-                                pass
-                            
-                            pic.save()
-                            pixel.pic = pic
-                            pixel.save()
-
-                            try:
-                                img = img.resize((mosaic.pixel_size, mosaic.pixel_size), Image.ANTIALIAS)
-                                filepath = settings.MEDIA_ROOT + '/pics/%s.jpg' % pic.id
-                                img.save(filepath, 'JPEG')
-                            except IOError as e:
-                                print "I/O error({0}): {1}".format(e.errno, e.strerror)
-                                pic.delete()
-                            
-                            break
-                        
+                    try:
+                        img = img.resize((mosaic.pixel_size, mosaic.pixel_size), Image.ANTIALIAS)
+                        filepath = settings.MEDIA_ROOT + '/pics/%s.jpg' % pic.id
+                        img.save(filepath, 'JPEG')
+                    except IOError as e:
+                        print "I/O error({0}): {1}".format(e.errno, e.strerror)
+                        pic.delete()
+                                            
 class Mosaic(models.Model):
     name = models.CharField(max_length=255, blank=True)
     image = models.ImageField(upload_to="mosaic/")
@@ -232,6 +224,7 @@ class InstaPic(models.Model):
     location_lat = models.FloatField(blank=True, null=True)
     location_lng = models.FloatField(blank=True, null=True)
     location_name = models.CharField(max_length=255, blank=True, null=True, default='')
+    subscriptions = models.ManyToManyField(Subscription, related_name="instapics")
     publish_date = models.DateTimeField(auto_now_add=True)    
     create_date = models.DateTimeField(auto_now_add=True,blank=True)
     
@@ -241,6 +234,37 @@ class InstaPic(models.Model):
     def color_block(self):
         return u'#%s : <div style="float:right; background-color:#%s; width:10px; height:10px;"></div>' % (self.color,self.color)
     
+    def find_related_pixel(self):
+        try:
+            fileimage = cStringIO.StringIO(urllib.urlopen(self.picture_url_high).read())
+            img = Image.open(fileimage)
+            imgResze = img.resize((1, 1), Image.ANTIALIAS)
+            pixels = list(imgResze.getdata())
+        except IOError as e:
+            print "I/O error({0}): {1}".format(e.errno, e.strerror)
+            self.delete()
+        
+        color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
+        color_hex = color_insta.get_rgb_hex()
+        color_hex = color_hex.replace("#", "")
+        delta_e = 100      
+        for subscription in self.subscriptions.all():
+            for mosaic in subscription.mosaics.all():
+                for pixel in mosaic.pixels.filter(pic__isnull=True):
+                    pixel_color = RGBColor(pixel.r_color,pixel.g_color,pixel.b_color)
+                    delta_e_new = color_insta.delta_e(pixel_color)
+                    #print '#'+pixel.color 
+                    #print color_insta.get_rgb_hex() 
+                    #print delta_e_new 
+                    if delta_e_new < delta_e:
+                        delta_e = delta_e_new
+        if delta_e < 5:
+            print 'find pixel with delta %s' % delta_e
+            pixel.pic = self
+            pixel.save()
+        else:
+            self.delete()
+            
     image_tag.short_description = 'Image'
     image_tag.allow_tags = True
     color_block.allow_tags = True
