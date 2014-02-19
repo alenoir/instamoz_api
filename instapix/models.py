@@ -285,6 +285,7 @@ class InstaPic(models.Model):
                     print 'set pixel %s with delta %s' % (pixel_asso.id,delta_e)
                     pixel_asso.pic = self
                     pixel_asso.save()
+            self.save()
         else:
             self.delete()
         
