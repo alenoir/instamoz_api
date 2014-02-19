@@ -264,7 +264,13 @@ class InstaPic(models.Model):
             pixel.save()
         else:
             self.delete()
-            
+        
+    def has_pixel(self):
+        if self.pixels:
+            return True
+        else:
+            return False
+                
     image_tag.short_description = 'Image'
     image_tag.allow_tags = True
     color_block.allow_tags = True
