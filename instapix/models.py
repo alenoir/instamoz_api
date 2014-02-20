@@ -88,10 +88,10 @@ class Subscription(models.Model):
         self.set_last_update()
 
         if self.type == GEO_SUBSCRIPTION:
-            recent_media, next = api.geography_recent_media(20, '', self.object_id)
+            recent_media, next = api.geography_recent_media(10, '', self.object_id)
  
         if self.type == TAG_SUBSCRIPTION:
-            recent_media, next = api.tag_recent_media(20, '', self.tag)
+            recent_media, next = api.tag_recent_media(10, '', self.tag)
                     
         for media in recent_media:
             print media.id
