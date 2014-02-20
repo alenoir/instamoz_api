@@ -97,18 +97,7 @@ class Subscription(models.Model):
             print media.id
             if not InstaPic.objects.filter(picture_id=media.id).exists():
                 print media.id
-                try:
-                    fileimage = cStringIO.StringIO(urllib.urlopen(media.images['standard_resolution'].url).read())
-                    img = Image.open(fileimage)
-                    imgResze = img.resize((1, 1), Image.ANTIALIAS)
-                    pixels = list(imgResze.getdata())
-                except:
-                    continue
-                
-                color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
-                color_hex = color_insta.get_rgb_hex()
-                color_hex = color_hex.replace("#", "")
-                
+                                
                 pic = InstaPic()
                 pic.link = media.link
                 pic.user_id = media.user.id
@@ -117,10 +106,7 @@ class Subscription(models.Model):
                 pic.picture_id = media.id
                 pic.picture_url_low = media.images['low_resolution'].url
                 pic.picture_url_high = media.images['standard_resolution'].url
-                pic.color = color_hex
-                pic.r_color = pixels[0][0]
-                pic.g_color = pixels[0][1]
-                pic.b_color = pixels[0][2]
+                
                 try:
                     pic.location_lat = media.location.point.latitude
                     pic.location_lng = media.location.point.longitude
@@ -131,15 +117,6 @@ class Subscription(models.Model):
                 pic.save()
                 pic.subscriptions.add(self)
                 pic.save()
-                
-                for mosaic in self.mosaics.all():
-                    try:
-                        img = img.resize((mosaic.pixel_size, mosaic.pixel_size), Image.ANTIALIAS)
-                        filepath = settings.MEDIA_ROOT + '/pics/%s.jpg' % pic.id
-                        img.save(filepath, 'JPEG')
-                    except IOError as e:
-                        print "I/O error({0}): {1}".format(e.errno, e.strerror)
-                        pic.delete()
                                             
 class Mosaic(models.Model):
     name = models.CharField(max_length=255, blank=True)
@@ -249,11 +226,6 @@ class InstaPic(models.Model):
         return u'#%s : <div style="float:right; background-color:#%s; width:10px; height:10px;"></div>' % (self.color,self.color)
     
     def find_related_pixel(self):
-        filepath = settings.MEDIA_ROOT + '/pics/%s.jpg' % self.id
-
-        if not os.path.isfile(filepath):
-            self.delete()
-            return True
         try:
             fileimage = cStringIO.StringIO(urllib.urlopen(self.picture_url_high).read())
             img = Image.open(fileimage)
@@ -263,6 +235,26 @@ class InstaPic(models.Model):
             print "I/O error({0}): {1}".format(e.errno, e.strerror)
             self.delete()
             return True
+        
+        color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
+        color_hex = color_insta.get_rgb_hex()
+        color_hex = color_hex.replace("#", "")
+                
+        self.color = color_hex
+        self.r_color = pixels[0][0]
+        self.g_color = pixels[0][1]
+        self.b_color = pixels[0][2]
+        
+        for subscription in self.subscriptions.all():
+            for mosaic in subscription.mosaics.all():
+                try:
+                    img = img.resize((mosaic.pixel_size, mosaic.pixel_size), Image.ANTIALIAS)
+                    filepath = settings.MEDIA_ROOT + '/pics/%s_%s.jpg' % (mosaic.pixel_size,self.id)
+                    img.save(filepath, 'JPEG')
+                except IOError as e:
+                    print "I/O error({0}): {1}".format(e.errno, e.strerror)
+                    self.delete()
+                    return False
         
         color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
         color_hex = color_insta.get_rgb_hex()
@@ -310,11 +302,11 @@ class Pixel(models.Model):
     create_date = models.DateTimeField(auto_now_add=True,blank=True)
     
     def color_block(self):
-        return u'#%s : <div style="float:right; background-color:#%s; width:10px; height:10px;"></div>' % (self.color,self.color)
+        return u'#%s : <div style="float:right; background-color:#%s; width:%spx; height:%spx;"></div>' % (self.color,self.color,self.mosaic.pixel_size,self.mosaic.pixel_size)
     
     def pic_color(self):
         if(self.pic):
-            return u'#%s : <div style="float:right; background-color:#%s; width:10px; height:10px;"></div>' % (self.pic.color,self.pic.color)
+            return u'#%s : <div style="float:right; background-color:#%s; width:%spx; height:%spx;"></div>' % (self.pic.color,self.pic.color,self.mosaic.pixel_size,self.mosaic.pixel_size)
         else:
             return u''
     
