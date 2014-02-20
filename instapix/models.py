@@ -64,8 +64,8 @@ class Subscription(models.Model):
     def save(self, *args, **kwargs):
         update_sub = kwargs.pop('add_usbscription', True)
         if update_sub:
-            if self.pk is not None:
-                api.delete_subscriptions(id=self.subscription_id)
+            #if self.pk is not None:
+                #api.delete_subscriptions(id=self.subscription_id)
     
             if self.type == GEO_SUBSCRIPTION:
                 res = api.create_subscription(object='geography', lat=self.location_lat, lng=self.location_lng, radius=self.radius, aspect='media', callback_url=settings.INSTAGRAM_CONFIG['redirect_uri'])
@@ -317,7 +317,6 @@ class Pixel(models.Model):
 @receiver(pre_delete, sender=Subscription, dispatch_uid='subscription_delete_signal')
 def subscription_delete_signal(sender, instance, using, **kwargs):
     try:
-        #api.delete_subscriptions(id=instance.subscription_id)
-        pass
+        api.delete_subscriptions(id=instance.subscription_id)
     except:
         pass
