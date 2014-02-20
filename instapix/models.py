@@ -247,6 +247,7 @@ class InstaPic(models.Model):
         
         for subscription in self.subscriptions.all():
             for mosaic in subscription.mosaics.all():
+                print mosaic.name
                 try:
                     img = img.resize((mosaic.pixel_size, mosaic.pixel_size), Image.ANTIALIAS)
                     filepath = settings.MEDIA_ROOT + '/pics/%s_%s.jpg' % (mosaic.pixel_size,self.id)
