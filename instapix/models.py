@@ -64,8 +64,8 @@ class Subscription(models.Model):
     def save(self, *args, **kwargs):
         update_sub = kwargs.pop('add_usbscription', True)
         if update_sub:
-            #if self.pk is not None:
-                #api.delete_subscriptions(id=self.subscription_id)
+            if self.pk is not None:
+                api.delete_subscriptions(id=self.subscription_id)
     
             if self.type == GEO_SUBSCRIPTION:
                 res = api.create_subscription(object='geography', lat=self.location_lat, lng=self.location_lng, radius=self.radius, aspect='media', callback_url=settings.INSTAGRAM_CONFIG['redirect_uri'])
@@ -83,15 +83,15 @@ class Subscription(models.Model):
         self.last_update = datetime.now()
         self.save(add_usbscription=False)
     
-    @transaction.commit_on_success
+    #@transaction.commit_on_success
     def update_subscription(self):
         self.set_last_update()
 
         if self.type == GEO_SUBSCRIPTION:
-            recent_media, next = api.geography_recent_media(10, '', self.object_id)
+            recent_media, next = api.geography_recent_media(50, '', self.object_id)
  
         if self.type == TAG_SUBSCRIPTION:
-            recent_media, next = api.tag_recent_media(10, '', self.tag)
+            recent_media, next = api.tag_recent_media(50, '', self.tag)
                     
         for media in recent_media:
             print media.id
@@ -278,6 +278,8 @@ class InstaPic(models.Model):
                     print 'set pixel %s with delta %s' % (pixel_asso.id,delta_e)
                     pixel_asso.pic = self
                     pixel_asso.save()
+                else:
+                    self.delete()
         self.save()
         
     def has_pixel(self):
