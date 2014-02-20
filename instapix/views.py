@@ -45,13 +45,17 @@ class MosaicRealtime(View):
     def post(self, request, *args, **kwargs):
         print request.body
         json_data = json.loads(request.body)
+        i=0
         for object in json_data:
+            i +=1
             subscription_id = object['subscription_id']
             try:
                 subscription = Subscription.objects.get(subscription_id=subscription_id)
                 subscription.update_subscription()
             except Subscription.DoesNotExist:
                 pass
+            if i>10:
+                break
                 
         return HttpResponse("ok")
     
