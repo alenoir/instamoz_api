@@ -317,6 +317,7 @@ class Pixel(models.Model):
 @receiver(pre_delete, sender=Subscription, dispatch_uid='subscription_delete_signal')
 def subscription_delete_signal(sender, instance, using, **kwargs):
     try:
-        api.delete_subscriptions(id=instance.subscription_id)
+        #api.delete_subscriptions(id=instance.subscription_id)
+        pass
     except:
         pass
