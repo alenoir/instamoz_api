@@ -234,8 +234,8 @@ class InstaPic(models.Model):
             img = Image.open(fileimage)
             imgResze = img.resize((1, 1), Image.ANTIALIAS)
             pixels = list(imgResze.getdata())
-        except IOError as e:
-            print "I/O error({0}): {1}".format(e.errno, e.strerror)
+        except:
+            print 'error color pixel'
             self.delete()
             return True
         
@@ -248,23 +248,24 @@ class InstaPic(models.Model):
         self.g_color = pixels[0][1]
         self.b_color = pixels[0][2]
         
+        pixel_asso = None    
         for subscription in self.subscriptions.all():
+            print 'Subscription => %s' %  subscription
             for mosaic in subscription.mosaics.all():
-                print mosaic.name
+                print 'Mosaic : %s' % mosaic.name
                 try:
                     img = img.resize((mosaic.pixel_size, mosaic.pixel_size), Image.ANTIALIAS)
                     filepath = settings.MEDIA_ROOT + '/pics/%s_%s.jpg' % (mosaic.pixel_size,self.id)
                     img.save(filepath, 'JPEG')
-                except IOError as e:
-                    print "I/O error({0}): {1}".format(e.errno, e.strerror)
-        
-        color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
-        color_hex = color_insta.get_rgb_hex()
-        color_hex = color_hex.replace("#", "")
-        delta_e = 100  
-        pixel_asso = None    
-        for subscription in self.subscriptions.all():
-            for mosaic in subscription.mosaics.all():
+                except:
+                    print 'error save pixel min'
+                    return True
+                
+                color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
+                color_hex = color_insta.get_rgb_hex()
+                color_hex = color_hex.replace("#", "")
+                delta_e = 100   
+                 
                 for pixel in mosaic.pixels.filter(pic__isnull=True):
                     pixel_color = RGBColor(pixel.r_color,pixel.g_color,pixel.b_color)
                     delta_e_new = color_insta.delta_e(pixel_color)
