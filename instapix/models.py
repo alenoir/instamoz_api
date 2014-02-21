@@ -257,7 +257,6 @@ class InstaPic(models.Model):
                     img.save(filepath, 'JPEG')
                 except IOError as e:
                     print "I/O error({0}): {1}".format(e.errno, e.strerror)
-                    return False
         
         color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
         color_hex = color_insta.get_rgb_hex()
