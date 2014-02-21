@@ -12,6 +12,10 @@ class Command(BaseCommand):
             img = Image.new('RGB',(620,620), "white")
             for pixel in mosaic.pixels.filter(pic__isnull=False):
                 filepath = settings.MEDIA_ROOT + '/pics/%s_%s.jpg' % (mosaic.pixel_size,pixel.pic.id)
+                
+                print '-------------'
+                print pixel.pic.id
+                print mosaic.pixel_size
                 print pixel.x
                 print pixel.y
                 print '-------------'
