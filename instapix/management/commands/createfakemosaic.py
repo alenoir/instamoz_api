@@ -11,19 +11,22 @@ class Command(BaseCommand):
         for mosaic in Mosaic.objects.all():
             img = Image.new('RGB',(620,620), "white")
             for pixel in mosaic.pixels.filter(pic__isnull=False):
-                print '-------------'
-                print pixel.id
-                print mosaic.pixel_size
-                filepath = settings.MEDIA_ROOT + '/pics/%s_%s.jpg' % (mosaic.pixel_size,pixel.pic.id)
-                
-                
-                print pixel.x
-                print pixel.y
-                print '-------------'
                 try:
-                    img.paste(Image.open(filepath), (pixel.y,pixel.x))
+                    print '-------------'
+                    print pixel.id
+                    print mosaic.pixel_size
+                    filepath = settings.MEDIA_ROOT + '/pics/%s_%s.jpg' % (mosaic.pixel_size,pixel.pic.id)
+                    
+                    
+                    print pixel.x
+                    print pixel.y
+                    print '-------------'
+                    try:
+                        img.paste(Image.open(filepath), (pixel.y,pixel.x))
+                    except:
+                        #pixel.pic.delete()
+                        pass
                 except:
-                    #pixel.pic.delete()
                     pass
 
             out_path = settings.MEDIA_ROOT + '/mosaic/bg_%s.jpg' % mosaic.id
