@@ -216,6 +216,7 @@ class InstaPic(models.Model):
     location_lng = models.FloatField(blank=True, null=True)
     location_name = models.CharField(max_length=255, blank=True, null=True, default='')
     subscriptions = models.ManyToManyField(Subscription, related_name="instapics")
+    is_parse = models.BooleanField(default=False)
     publish_date = models.DateTimeField(auto_now_add=True)    
     create_date = models.DateTimeField(auto_now_add=True,blank=True)
     
@@ -226,6 +227,8 @@ class InstaPic(models.Model):
         return u'#%s : <div style="float:right; background-color:#%s; width:10px; height:10px;"></div>' % (self.color,self.color)
     
     def find_related_pixel(self):
+        self.is_parse = True
+
         try:
             fileimage = cStringIO.StringIO(urllib.urlopen(self.picture_url_high).read())
             img = Image.open(fileimage)
@@ -254,7 +257,6 @@ class InstaPic(models.Model):
                     img.save(filepath, 'JPEG')
                 except IOError as e:
                     print "I/O error({0}): {1}".format(e.errno, e.strerror)
-                    self.delete()
                     return False
         
         color_insta = RGBColor(pixels[0][0],pixels[0][1],pixels[0][2])
@@ -278,8 +280,6 @@ class InstaPic(models.Model):
                     print 'set pixel %s with delta %s' % (pixel_asso.id,delta_e)
                     pixel_asso.pic = self
                     pixel_asso.save()
-                else:
-                    self.delete()
         self.save()
         
     def has_pixel(self):
