@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8061ef50-968c-420a-b0ad-610d5dce290d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="instamoz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="473">
+            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
               <folding />
             </state>
           </provider>
@@ -88,16 +88,16 @@
       <file leaf-file-name="wsgi.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/instamoz/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="36" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+            <state line="14" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prod.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="prod.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/instamoz/settings/prod.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="35" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+            <state line="19" column="1" selection-start="474" selection-end="474" vertical-scroll-proportion="0.63616073" vertical-offset="0" max-vertical-offset="448">
               <folding />
             </state>
           </provider>
@@ -156,10 +156,10 @@
         <option value="$PROJECT_DIR$/procfile" />
         <option value="$PROJECT_DIR$/instamoz/wsgi.py" />
         <option value="$PROJECT_DIR$/instamoz/settings/base.py" />
-        <option value="$PROJECT_DIR$/instamoz/settings/prod.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/instamoz/settings/prod.py" />
       </list>
     </option>
   </component>
@@ -702,23 +702,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instamoz/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="36" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/instamoz/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="21" selection-end="667" vertical-scroll-proportion="-0.37974682" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instamoz/settings/prod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="35" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
@@ -740,6 +726,20 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="473">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instamoz/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instamoz/settings/prod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="1" selection-start="474" selection-end="474" vertical-scroll-proportion="0.63616073" vertical-offset="0" max-vertical-offset="448">
           <folding />
         </state>
       </provider>
