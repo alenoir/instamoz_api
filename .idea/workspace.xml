@@ -2,161 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8061ef50-968c-420a-b0ad-610d5dce290d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/procfile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/__init__.py" afterPath="$PROJECT_DIR$/instamoz/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/__init__.py" afterPath="$PROJECT_DIR$/instamoz/apps/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/__init__.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/admin.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/admin.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/management/__init__.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/management/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/management/commands/__init__.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/management/commands/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/management/commands/_private.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/management/commands/_private.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/management/commands/associatepixel.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/management/commands/associatepixel.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/management/commands/createfakemosaic.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/management/commands/createfakemosaic.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/management/commands/getinstagrampics.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/management/commands/getinstagrampics.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/management/commands/parsemosaics.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/management/commands/parsemosaics.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/migrations/0001_initial.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/migrations/__init__.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/migrations/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/models.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/models.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/serializer.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/serializer.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/templates/mosaic_detail.html" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/tests.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/tests.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/urls.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/apps/instapix/views.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/views.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/settings/__init__.py" afterPath="$PROJECT_DIR$/instamoz/settings/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/settings/base.py" afterPath="$PROJECT_DIR$/instamoz/settings/base.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/settings/dev.py" afterPath="$PROJECT_DIR$/instamoz/settings/dev.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/settings/prod.py" afterPath="$PROJECT_DIR$/instamoz/settings/prod.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/css/base.css" afterPath="$PROJECT_DIR$/instamoz/static/admin/css/base.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/css/changelists.css" afterPath="$PROJECT_DIR$/instamoz/static/admin/css/changelists.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/css/dashboard.css" afterPath="$PROJECT_DIR$/instamoz/static/admin/css/dashboard.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/css/forms.css" afterPath="$PROJECT_DIR$/instamoz/static/admin/css/forms.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/css/ie.css" afterPath="$PROJECT_DIR$/instamoz/static/admin/css/ie.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/css/login.css" afterPath="$PROJECT_DIR$/instamoz/static/admin/css/login.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/css/rtl.css" afterPath="$PROJECT_DIR$/instamoz/static/admin/css/rtl.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/css/widgets.css" afterPath="$PROJECT_DIR$/instamoz/static/admin/css/widgets.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/changelist-bg.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/changelist-bg.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/changelist-bg_rtl.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/changelist-bg_rtl.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/chooser-bg.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/chooser-bg.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/chooser_stacked-bg.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/chooser_stacked-bg.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/default-bg-reverse.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/default-bg-reverse.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/default-bg.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/default-bg.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/deleted-overlay.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/deleted-overlay.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/gis/move_vertex_off.png" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/gis/move_vertex_off.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/gis/move_vertex_on.png" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/gis/move_vertex_on.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/icon-no.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/icon-no.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/icon-unknown.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/icon-unknown.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/icon-yes.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/icon-yes.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/icon_addlink.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/icon_addlink.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/icon_alert.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/icon_alert.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/icon_calendar.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/icon_calendar.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/icon_changelink.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/icon_changelink.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/icon_clock.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/icon_clock.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/icon_deletelink.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/icon_deletelink.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/icon_error.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/icon_error.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/icon_searchbox.png" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/icon_searchbox.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/icon_success.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/icon_success.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/inline-delete-8bit.png" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/inline-delete-8bit.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/inline-delete.png" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/inline-delete.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/inline-restore-8bit.png" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/inline-restore-8bit.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/inline-restore.png" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/inline-restore.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/inline-splitter-bg.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/inline-splitter-bg.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/nav-bg-grabber.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/nav-bg-grabber.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/nav-bg-reverse.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/nav-bg-reverse.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/nav-bg-selected.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/nav-bg-selected.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/nav-bg.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/nav-bg.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/selector-icons.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/selector-icons.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/selector-search.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/selector-search.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/sorting-icons.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/sorting-icons.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/tool-left.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/tool-left.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/tool-left_over.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/tool-left_over.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/tool-right.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/tool-right.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/tool-right_over.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/tool-right_over.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/tooltag-add.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/tooltag-add.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/tooltag-add_over.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/tooltag-add_over.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/tooltag-arrowright.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/tooltag-arrowright.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/img/tooltag-arrowright_over.gif" afterPath="$PROJECT_DIR$/instamoz/static/admin/img/tooltag-arrowright_over.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/LICENSE-JQUERY.txt" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/LICENSE-JQUERY.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/SelectBox.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/SelectBox.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/SelectFilter2.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/SelectFilter2.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/actions.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/actions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/actions.min.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/actions.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/admin/DateTimeShortcuts.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/admin/DateTimeShortcuts.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/admin/RelatedObjectLookups.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/admin/RelatedObjectLookups.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/calendar.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/calendar.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/collapse.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/collapse.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/collapse.min.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/collapse.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/core.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/core.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/inlines.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/inlines.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/inlines.min.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/inlines.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/jquery.init.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/jquery.init.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/jquery.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/jquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/jquery.min.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/prepopulate.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/prepopulate.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/prepopulate.min.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/prepopulate.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/timeparse.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/timeparse.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/admin/js/urlify.js" afterPath="$PROJECT_DIR$/instamoz/static/admin/js/urlify.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/rest_framework/css/bootstrap-tweaks.css" afterPath="$PROJECT_DIR$/instamoz/static/rest_framework/css/bootstrap-tweaks.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/rest_framework/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/instamoz/static/rest_framework/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/rest_framework/css/default.css" afterPath="$PROJECT_DIR$/instamoz/static/rest_framework/css/default.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/rest_framework/css/prettify.css" afterPath="$PROJECT_DIR$/instamoz/static/rest_framework/css/prettify.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/rest_framework/img/glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/instamoz/static/rest_framework/img/glyphicons-halflings-white.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/rest_framework/img/glyphicons-halflings.png" afterPath="$PROJECT_DIR$/instamoz/static/rest_framework/img/glyphicons-halflings.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/rest_framework/img/grid.png" afterPath="$PROJECT_DIR$/instamoz/static/rest_framework/img/grid.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/rest_framework/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/instamoz/static/rest_framework/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/rest_framework/js/default.js" afterPath="$PROJECT_DIR$/instamoz/static/rest_framework/js/default.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/rest_framework/js/jquery-1.8.1-min.js" afterPath="$PROJECT_DIR$/instamoz/static/rest_framework/js/jquery-1.8.1-min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/rest_framework/js/prettify-min.js" afterPath="$PROJECT_DIR$/instamoz/static/rest_framework/js/prettify-min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/urls.py" afterPath="$PROJECT_DIR$/instamoz/urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/wsgi.py" afterPath="$PROJECT_DIR$/instamoz/wsgi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/fcompiler/__init__.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/fcompiler/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/django/test/_doctest.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django/test/_doctest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/add_newdocs.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/add_newdocs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/setuptools/command/bdist_rpm.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/setuptools/command/bdist_rpm.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/command/build_src.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/command/build_src.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/commands/bundle.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/commands/bundle.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/markdown/extensions/codehilite.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/markdown/extensions/codehilite.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/conv_template.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/conv_template.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/django/template/defaulttags.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django/template/defaulttags.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/setuptools/tests/doctest.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/setuptools/tests/doctest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/f2py2e.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/f2py2e.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/from_template.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/from_template.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/django/contrib/gis/maps/google/gmap.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django/contrib/gis/maps/google/gmap.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/markdown/inlinepatterns.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/markdown/inlinepatterns.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/commands/install.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/commands/install.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/setuptools/command/install_egg_info.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/setuptools/command/install_egg_info.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/locations.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/locations.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/django/core/files/move.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django/core/files/move.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/numpy_distribution.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/numpy_distribution.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/operations.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/operations.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/pkg_resources.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/pkg_resources.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/req.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/req.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/vendor/html5lib/sanitizer.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/vendor/html5lib/sanitizer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/core/setup.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/core/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/tests/f2py_ext/setup.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/tests/f2py_ext/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/tests/f2py_f90_ext/setup.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/tests/f2py_f90_ext/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/tests/swig_ext/setup.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/tests/swig_ext/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/setup.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/lib/setup.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/lib/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/linalg/setup.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/linalg/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/vendor/distlib/_backport/shutil.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/vendor/distlib/_backport/shutil.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/system_info.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/distutils/system_info.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/vendor/distlib/_backport/tarfile.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/vendor/distlib/_backport/tarfile.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/tests/test_array_from_pyobj.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/tests/test_array_from_pyobj.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/tests/test_assumed_shape.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/tests/test_assumed_shape.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/setuptools/tests/test_bdist_egg.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/setuptools/tests/test_bdist_egg.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/tests/test_kind.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/tests/test_kind.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/tests/test_mixed.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/tests/test_mixed.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/core/tests/test_multiarray.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/core/tests/test_multiarray.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/core/tests/test_multiarray_assignment.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/core/tests/test_multiarray_assignment.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/tests/test_size.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/numpy/f2py/tests/test_size.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/util.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/pip/util.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/django/test/utils.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django/test/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/django/contrib/admin/widgets.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django/contrib/admin/widgets.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/django/forms/widgets.py" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django/forms/widgets.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <ignored path="instamoz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -179,17 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="createfakemosaic.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/management/commands/createfakemosaic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="getinstagrampics.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/management/commands/getinstagrampics.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -268,10 +104,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.25369978" vertical-offset="0" max-vertical-offset="473">
+            <state line="8" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="63" selection-start="91" selection-end="91" vertical-scroll-proportion="0.063424945" vertical-offset="0" max-vertical-offset="473">
               <folding />
             </state>
           </provider>
@@ -314,6 +159,7 @@
         <option value="$PROJECT_DIR$/instamoz/settings/base.py" />
         <option value="$PROJECT_DIR$/instamoz/settings/prod.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -886,7 +732,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.25369978" vertical-offset="0" max-vertical-offset="473">
+        <state line="8" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="63" selection-start="91" selection-end="91" vertical-scroll-proportion="0.063424945" vertical-offset="0" max-vertical-offset="473">
           <folding />
         </state>
       </provider>
