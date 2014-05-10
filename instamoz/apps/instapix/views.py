@@ -38,7 +38,7 @@ class MosaicRealtime(View):
 
     def get(self, request, *args, **kwargs):
         challenge =  request.GET.get('hub.challenge')
-        return HttpResponse(challenge, content_type="application/json")
+        return HttpResponse(challenge)
     
     def post(self, request, *args, **kwargs):
         print request.body
