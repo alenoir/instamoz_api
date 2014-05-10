@@ -1,6 +1,6 @@
 {% for pixel in mosaic.pixels.all %}
 {% if pixel.pic %}
-<img style="width:10px; height:10px; background-color:#{{pixel.color}}; position:absolute; top:{{pixel.x}}; left:{{pixel.y}}; border:none;" src="/media/pics/{{pixel.pic.id}}.jpg" />
+<img style="width:10px; height:10px; background-color:#{{pixel.color}}; position:absolute; top:{{pixel.x}}; left:{{pixel.y}}; border:none;" src="/media/pics/{{mosaic.pixel_size}}_{{pixel.pic.id}}.jpg" />
 {% else %}
 <div class="pic_fake" style="width:10px; height:10px; background-color:#{{pixel.color}}; position:absolute; top:{{pixel.x}}; left:{{pixel.y}};"></div>
 {% endif %}

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8061ef50-968c-420a-b0ad-610d5dce290d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instamoz/urls.py" afterPath="$PROJECT_DIR$/instamoz/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="instamoz.iws" />
@@ -73,22 +73,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mosaic_detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180">
-              <folding />
+            <state line="256" column="91" selection-start="10721" selection-end="10731" vertical-scroll-proportion="-2.6666667" vertical-offset="3704" max-vertical-offset="4935">
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/models.py">
+      <file leaf-file-name="mosaic_detail.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="36" selection-start="9329" selection-end="9329" vertical-scroll-proportion="-1.7843137" vertical-offset="3239" max-vertical-offset="4935">
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state line="2" column="165" selection-start="221" selection-end="221" vertical-scroll-proportion="0.066815145" vertical-offset="0" max-vertical-offset="449">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,19 +102,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/instamoz/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="39" selection-start="395" selection-end="395" vertical-scroll-proportion="0.234375" vertical-offset="0" max-vertical-offset="448">
+            <state line="12" column="39" selection-start="395" selection-end="395" vertical-scroll-proportion="-4.2" vertical-offset="0" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <file leaf-file-name="associatepixel.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/management/commands/associatepixel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -161,6 +161,7 @@
         <option value="$PROJECT_DIR$/instamoz/settings/base.py" />
         <option value="$PROJECT_DIR$/instamoz/apps/instapix/models.py" />
         <option value="$PROJECT_DIR$/instamoz/urls.py" />
+        <option value="$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html" />
       </list>
     </option>
   </component>
@@ -301,6 +302,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="instapix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instamoz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instamoz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instamoz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instapix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -744,13 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/management/commands/associatepixel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/management/commands/createfakemosaic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
@@ -801,13 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="473">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
@@ -852,15 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="36" selection-start="9329" selection-end="9329" vertical-scroll-proportion="-1.7843137" vertical-offset="3239" max-vertical-offset="4935">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
@@ -870,7 +874,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/instamoz/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="39" selection-start="395" selection-end="395" vertical-scroll-proportion="0.234375" vertical-offset="0" max-vertical-offset="448">
+        <state line="12" column="39" selection-start="395" selection-end="395" vertical-scroll-proportion="-4.2" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/management/commands/associatepixel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="256" column="91" selection-start="10721" selection-end="10731" vertical-scroll-proportion="-2.6666667" vertical-offset="3704" max-vertical-offset="4935">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="165" selection-start="221" selection-end="221" vertical-scroll-proportion="0.066815145" vertical-offset="0" max-vertical-offset="449">
           <folding />
         </state>
       </provider>
