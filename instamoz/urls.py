@@ -10,7 +10,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^', include('instamoz.apps.instapix.urls')),
-    url(r'^mosaics/(?P<mosaic_id>\d)/preview$', MosaicPreview.as_view()),
+    url(r'^mosaics/(?P<mosaic_id>[0-9]+)/preview$', MosaicPreview.as_view()),
     url(r'^realtime-instagram/$', MosaicRealtime.as_view()),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^mosaics/$', MosaicList.as_view()),
