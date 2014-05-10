@@ -2,104 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8061ef50-968c-420a-b0ad-610d5dce290d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/pilconvert.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/pildriver.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/pilfile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/pilfont.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/pilprint.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ArgImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/BdfFontFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/BmpImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/BufrStubImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ContainerIO.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/CurImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/DcxImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/EpsImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ExifTags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/FitsStubImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/FliImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/FontFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/FpxImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/GbrImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/GdImageFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/GifImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/GimpGradientFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/GimpPaletteFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/GribStubImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/Hdf5StubImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/IcnsImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/IcoImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/Image.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageChops.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageCms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageColor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageDraw.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageDraw2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageEnhance.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageFileIO.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageFilter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageFont.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageGL.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageGrab.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageMath.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageMode.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageOps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImagePalette.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImagePath.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageQt.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageSequence.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageShow.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageStat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageTk.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageTransform.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageWin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImtImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/IptcImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/JpegImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/McIdasImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/MicImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/MpegImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/MspImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/OleFileIO.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PIL-1.1.7-py2.7.egg-info/PKG-INFO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PIL-1.1.7-py2.7.egg-info/SOURCES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PIL-1.1.7-py2.7.egg-info/dependency_links.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PIL-1.1.7-py2.7.egg-info/installed-files.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PIL-1.1.7-py2.7.egg-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PSDraw.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PaletteFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PalmImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PcdImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PcfFontFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PcxImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PdfImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PixarImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PngImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PpmImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PsdImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/SgiImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/SpiderImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/SunImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/TarIO.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/TgaImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/TiffImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/TiffTags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/WalImageFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/WmfImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/XVThumbImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/XbmImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/XpmImagePlugin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/_imaging.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/_imagingmath.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/_imagingtk.so" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instamoz/settings/base.py" afterPath="$PROJECT_DIR$/instamoz/settings/base.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instamoz/apps/instapix/models.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="instamoz.iws" />
@@ -126,7 +30,7 @@
       <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/instamoz/settings/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="31" selection-start="1300" selection-end="1300" vertical-scroll-proportion="-2.3921568" vertical-offset="628" max-vertical-offset="1365">
+            <state line="81" column="16" selection-start="1943" selection-end="1943" vertical-scroll-proportion="-5.3333335" vertical-offset="943" max-vertical-offset="1380">
               <folding>
                 <element signature="e#319#328#0" expanded="true" />
               </folding>
@@ -143,19 +47,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="50" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="473">
+            <state line="0" column="50" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/instamoz/wsgi.py">
+      <file leaf-file-name="gunicorn_django" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/gunicorn_django">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="300">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
@@ -190,20 +94,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="8" selection-start="106" selection-end="109" vertical-scroll-proportion="-1.7647059" vertical-offset="0" max-vertical-offset="4935">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-              <folding />
+            <state line="222" column="36" selection-start="9329" selection-end="9329" vertical-scroll-proportion="0.22249389" vertical-offset="3239" max-vertical-offset="4935">
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -253,10 +150,11 @@
         <option value="$PROJECT_DIR$/instamoz/settings/dev.py" />
         <option value="$PROJECT_DIR$/instamoz/apps/instapix/views.py" />
         <option value="$PROJECT_DIR$/instamoz/settings/prod.py" />
-        <option value="$PROJECT_DIR$/instamoz/settings/base.py" />
-        <option value="$PROJECT_DIR$/instamoz/apps/instapix/models.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/bin/gunicorn_start" />
+        <option value="$PROJECT_DIR$/instamoz/settings/base.py" />
+        <option value="$PROJECT_DIR$/instamoz/apps/instapix/models.py" />
       </list>
     </option>
   </component>
@@ -397,6 +295,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="instapix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instamoz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instamoz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instamoz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instapix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instamoz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instamoz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instamoz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instapix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -610,10 +564,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -846,13 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instamoz/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="953" selection-end="953" vertical-scroll-proportion="-4.367089" vertical-offset="0" max-vertical-offset="435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="37" selection-start="1263" selection-end="1263" vertical-scroll-proportion="-7.12" vertical-offset="422" max-vertical-offset="1020">
@@ -869,29 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instamoz/settings/prod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="44" selection-start="1120" selection-end="1120" vertical-scroll-proportion="-15.6" vertical-offset="30" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instamoz/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="31" selection-start="1300" selection-end="1300" vertical-scroll-proportion="-2.3921568" vertical-offset="628" max-vertical-offset="1365">
-          <folding>
-            <element signature="e#319#328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="106" selection-end="109" vertical-scroll-proportion="-1.7647059" vertical-offset="0" max-vertical-offset="4935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
@@ -903,6 +827,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="50" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="473">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/gunicorn_django">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="473">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instamoz/settings/prod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="44" selection-start="1120" selection-end="1120" vertical-scroll-proportion="-15.6" vertical-offset="30" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instamoz/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="953" selection-end="953" vertical-scroll-proportion="-4.367089" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instamoz/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="16" selection-start="1943" selection-end="1943" vertical-scroll-proportion="-5.3333335" vertical-offset="943" max-vertical-offset="1380">
+          <folding>
+            <element signature="e#319#328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="222" column="36" selection-start="9329" selection-end="9329" vertical-scroll-proportion="0.22249389" vertical-offset="3239" max-vertical-offset="4935">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

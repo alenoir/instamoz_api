@@ -220,7 +220,7 @@ class InstaPic(models.Model):
     create_date = models.DateTimeField(auto_now_add=True,blank=True)
     
     def image_tag(self):
-        return u'<img width=70px instamoz="%s" />' % self.picture_url_low
+        return u'<img width=70px src="%s" />' % self.picture_url_low
     
     def color_block(self):
         return u'#%s : <div style="float:right; background-color:#%s; width:10px; height:10px;"></div>' % (self.color,self.color)

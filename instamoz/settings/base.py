@@ -79,6 +79,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
 
+print MEDIA_ROOT
 INSTAGRAM_CONFIG = {
     'client_id': '7ba882f721c4412cadb351f29ba8109f',
     'client_secret': '0d475653225f4b2188337a721d4e3a5d',
