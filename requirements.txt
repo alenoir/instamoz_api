@@ -1,6 +1,5 @@
 Django==1.6.2
 Markdown==2.4
--e hg+https://bitbucket.org/etienned/pil-2009-raclette/#egg=PIL
 South==0.8.4
 colormath==1.0.9
 dj-database-url==0.3.0

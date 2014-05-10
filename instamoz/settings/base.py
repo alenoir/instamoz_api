@@ -41,8 +41,7 @@ INSTALLED_APPS = (
     
     'rest_framework',
     'south',
-    'stdimage',
-    
+
     'instamoz.apps.instapix',
 )
 

@@ -4,7 +4,6 @@ import struct
 import os.path
 
 from django.db import transaction
-from stdimage import StdImageField
 from PIL import Image
 from pprint import pprint
 from colormath.color_objects import RGBColor

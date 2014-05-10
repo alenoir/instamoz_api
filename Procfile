@@ -1,1 +1,1 @@
-web: gunicorn instamoz.wsgi
+gunicorn = gunicorn -w 3 instamoz.wsgi:application
