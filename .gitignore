@@ -5,3 +5,5 @@ local_settings.py
 *.sqlite3
 static/media
 .idea
+venv
+staticfiles
