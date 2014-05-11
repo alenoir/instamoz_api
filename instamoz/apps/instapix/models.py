@@ -91,7 +91,7 @@ class Subscription(models.Model):
  
         if self.type == TAG_SUBSCRIPTION:
             recent_media, next = api.tag_recent_media(10, '', self.tag)
-
+        print recent_media
         for media in recent_media:
             print media.id
             if not InstaPic.objects.filter(picture_id=media.id).filter(is_parse=False).exists():
