@@ -91,7 +91,7 @@ class Subscription(models.Model):
  
         if self.type == TAG_SUBSCRIPTION:
             recent_media, next = api.tag_recent_media(10, '', self.tag)
-                    
+
         for media in recent_media:
             print media.id
             if not InstaPic.objects.filter(picture_id=media.id).filter(is_parse=False).exists():
@@ -116,6 +116,8 @@ class Subscription(models.Model):
                 pic.save()
                 pic.subscriptions.add(self)
                 pic.save()
+
+                pic.find_related_pixel()
                                             
 class Mosaic(models.Model):
     name = models.CharField(max_length=255, blank=True)
@@ -279,6 +281,7 @@ class InstaPic(models.Model):
                     print 'set pixel %s with delta %s' % (pixel_asso.id,delta_e)
                     pixel_asso.pic = self
                     pixel_asso.save()
+                    self.add_to_fake_mosaic(mosaic, pixel_asso)
         self.save()
         
     def has_pixel(self):
@@ -286,6 +289,21 @@ class InstaPic(models.Model):
             return True
         else:
             return False
+
+    def add_to_fake_mosaic(self, mosaic, pixel):
+        mosaic_path = settings.MEDIA_ROOT + '/mosaic/bg_%s.jpg' % mosaic.id
+
+        img = Image.open(mosaic_path)
+
+        filepath = settings.MEDIA_ROOT + '/pics/%s_%s.jpg' % (mosaic.pixel_size,pixel.pic.id)
+
+        try:
+            img.paste(Image.open(filepath), (pixel.y,pixel.x))
+        except:
+            #pixel.pic.delete()
+            pass
+
+        img.save(mosaic_path)
                 
     image_tag.short_description = 'Image'
     image_tag.allow_tags = True
