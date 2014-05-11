@@ -28,5 +28,6 @@ class Command(BaseCommand):
                 except:
                     pass
 
-            out_path = settings.MEDIA_ROOT + '/mosaic/bg_%s.jpg' % mosaic.id
-            img.save(out_path)
+            out_path = settings.MEDIA_ROOT + '/mosaic/bg_%s.png' % mosaic.id
+
+            img.save(out_path, 'PNG')

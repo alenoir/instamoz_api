@@ -16,8 +16,8 @@ class Command(BaseCommand):
             mosaic.parse_pixesl()
 
             img = Image.new('RGB',(620,620), "white")
-            out_path = settings.MEDIA_ROOT + '/mosaic/bg_%s.jpg' % mosaic.id
-            img.save(out_path)
+            out_path = settings.MEDIA_ROOT + '/mosaic/bg_%s.png' % mosaic.id
+            img.save(out_path, "PNG")
                     
                     
             

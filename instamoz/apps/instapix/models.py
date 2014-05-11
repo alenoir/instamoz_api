@@ -141,7 +141,7 @@ class Mosaic(models.Model):
         return self.pixels.filter(pic__isnull=False).count()
 
     def fake_image(self):
-        return settings.DOMAIN_URL + settings.MEDIA_URL +  'mosaic/bg_%s.jpg' % self.id
+        return settings.DOMAIN_URL + settings.MEDIA_URL +  'mosaic/bg_%s.png' % self.id
         
     def percent_complete(self):
         if self.pixels.all().count() > 0:
@@ -260,8 +260,8 @@ class InstaPic(models.Model):
                 print 'Mosaic : %s' % mosaic.name
                 try:
                     img = img.resize((mosaic.pixel_size, mosaic.pixel_size), Image.ANTIALIAS)
-                    filepath = settings.MEDIA_ROOT + '/pics/%s_%s.jpg' % (mosaic.pixel_size,self.id)
-                    img.save(filepath, 'JPEG')
+                    filepath = settings.MEDIA_ROOT + '/pics/%s_%s.png' % (mosaic.pixel_size,self.id)
+                    img.save(filepath, 'PNG')
                 except:
                     print 'error save pixel min'
                     return True
@@ -295,11 +295,11 @@ class InstaPic(models.Model):
             return False
 
     def add_to_fake_mosaic(self, mosaic, pixel):
-        mosaic_path = settings.MEDIA_ROOT + '/mosaic/bg_%s.jpg' % mosaic.id
+        mosaic_path = settings.MEDIA_ROOT + '/mosaic/bg_%s.png' % mosaic.id
 
         img = Image.open(mosaic_path)
 
-        filepath = settings.MEDIA_ROOT + '/pics/%s_%s.jpg' % (mosaic.pixel_size,pixel.pic.id)
+        filepath = settings.MEDIA_ROOT + '/pics/%s_%s.png' % (mosaic.pixel_size,pixel.pic.id)
 
         try:
             img.paste(Image.open(filepath), (pixel.y,pixel.x))
@@ -307,7 +307,7 @@ class InstaPic(models.Model):
             #pixel.pic.delete()
             pass
 
-        img.save(mosaic_path)
+        img.save(mosaic_path, "PNG")
                 
     image_tag.short_description = 'Image'
     image_tag.allow_tags = True
