@@ -66,6 +66,6 @@ class MosaicDetail(generics.RetrieveUpdateDestroyAPIView):
 
 class MosaicDetailPixel(APIView):
     def get(self, request, pk, format=None):
-        pixels = Pixel.objects.filter(mosaic__id=pk)
+        pixels = Pixel.objects.filter(mosaic__id=pk).filter(pic__isnull=False)
         serializer = PixelSerializer(pixels, many=True)
         return Response(serializer.data)
