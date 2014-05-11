@@ -1,165 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8061ef50-968c-420a-b0ad-610d5dce290d" name="Default" comment="change settings directory">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/pics/5_21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/pics/5_22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/pics/5_23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/pics/5_24.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/pics/5_25.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/pics/5_26.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/pics/5_27.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/pics/5_28.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/pics/5_29.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/pics/5_30.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/pics/5_31.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/mosaic/Le-Groupe-La-Poste-soutient-la-French-Tech-au-festival-South-by-Southwest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/_imaging.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/_imagingft.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/_imagingmath.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/_imagingtk.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/mosaic/bg_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/mosaic/frenchtech_620" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instamoz/static/media/mosaic/tour-eiffel_620.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/yeoman.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.bowerrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/.buildignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ArgImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/BdfFontFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/BmpImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/BufrStubImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ContainerIO.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/CurImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/DcxImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/EpsImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ExifTags.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/FitsStubImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/FliImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/FontFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/FpxImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/GbrImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/GdImageFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/GifImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/GimpGradientFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/GimpPaletteFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/GribStubImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/Hdf5StubImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/IcnsImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/IcoImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/Image.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageChops.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageCms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageColor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageDraw.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageDraw2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageEnhance.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageFileIO.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageFilter.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageFont.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageGrab.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageMath.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageMode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageOps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImagePalette.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImagePath.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageQt.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageSequence.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageShow.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageStat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageTk.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageTransform.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImageWin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/ImtImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/IptcImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/Jpeg2KImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/JpegImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/JpegPresets.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/McIdasImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/MicImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/MpegImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/MspImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/OleFileIO-README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/OleFileIO.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/Pillow-2.4.0-py2.7.egg-info/PKG-INFO" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django_cors_headers-0.12-py2.7.egg-info/PKG-INFO" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PSDraw.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PaletteFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PalmImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PcdImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PcfFontFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PcxImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PdfImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PixarImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PngImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PpmImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PsdImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/PyAccess.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/Pillow-2.4.0-py2.7.egg-info/SOURCES.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django_cors_headers-0.12-py2.7.egg-info/SOURCES.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/SgiImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/SpiderImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/SunImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/TarIO.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/TgaImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/TiffImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/TiffTags.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/WalImageFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/WebPImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/WmfImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/XVThumbImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/XbmImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/XpmImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/corsheaders/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/_binary.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/_util.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/corsheaders/defaults.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/Pillow-2.4.0-py2.7.egg-info/dependency_links.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django_cors_headers-0.12-py2.7.egg-info/dependency_links.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/mosaic/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/Pillow-2.4.0-py2.7.egg-info/installed-files.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django_cors_headers-0.12-py2.7.egg-info/installed-files.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/karma-e2e.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/karma.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/corsheaders/middleware.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/corsheaders/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/mosaic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/mosaic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/pilconvert.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/pildriver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/pilfile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/pilfont.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/pilprint.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django_cors_headers-0.12-py2.7.egg-info/requires.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/runner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/mosaic/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/PIL/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/corsheaders/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/Pillow-2.4.0-py2.7.egg-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/django_cors_headers-0.12-py2.7.egg-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python2.7/site-packages/Pillow-2.4.0-py2.7.egg-info/zip-safe" />
+    <list default="true" id="8061ef50-968c-420a-b0ad-610d5dce290d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instamoz/settings/base.py" afterPath="$PROJECT_DIR$/instamoz/settings/base.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="instamoz.iws" />
@@ -192,10 +35,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/instamoz/settings/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="28" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.8632287" vertical-offset="455" max-vertical-offset="1395">
+            <state line="58" column="28" selection-start="1599" selection-end="1599" vertical-scroll-proportion="-7.54902" vertical-offset="455" max-vertical-offset="1395">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="9" selection-start="111" selection-end="111" vertical-scroll-proportion="0.30241936" vertical-offset="0" max-vertical-offset="496">
               <folding />
             </state>
           </provider>
@@ -270,11 +122,11 @@
         <option value="$PROJECT_DIR$/instamoz/apps/instapix/management/commands/createfakemosaic.py" />
         <option value="$PROJECT_DIR$/instamoz/apps/instapix/management/commands/parsemosaics.py" />
         <option value="$PROJECT_DIR$/instamoz/apps/instapix/models.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/views/mosaic/show.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/mosaic.js" />
         <option value="$PROJECT_DIR$/instamoz/settings/base.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -639,7 +491,11 @@
       <created>1395093741078</created>
       <updated>1395093741078</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="angularjsapp&#10;">
+      <created>1399807186046</created>
+      <updated>1399807186047</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -664,10 +520,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -680,7 +537,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -719,7 +575,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="change settings directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="change settings directory" />
+    <MESSAGE value="angularjsapp&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="angularjsapp&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -953,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="137" selection-end="137" vertical-scroll-proportion="0.41226214" vertical-offset="0" max-vertical-offset="473">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="26" selection-start="3876" selection-end="3876" vertical-scroll-proportion="0.24057971" vertical-offset="1229" max-vertical-offset="5220">
@@ -1015,7 +865,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/instamoz/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="28" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.8632287" vertical-offset="455" max-vertical-offset="1395">
+        <state line="58" column="28" selection-start="1599" selection-end="1599" vertical-scroll-proportion="-7.54902" vertical-offset="455" max-vertical-offset="1395">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="9" selection-start="111" selection-end="111" vertical-scroll-proportion="0.30241936" vertical-offset="0" max-vertical-offset="496">
           <folding />
         </state>
       </provider>

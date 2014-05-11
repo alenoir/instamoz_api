@@ -8,7 +8,7 @@ app/bower_components
 *.pyc
 local_settings.py
 *.sqlite3
-static/media
+instamoz/static/media
 .idea
 venv
 staticfiles
