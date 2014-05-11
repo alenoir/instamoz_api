@@ -117,7 +117,7 @@ class Subscription(models.Model):
                 pic.subscriptions.add(self)
                 pic.save()
 
-                pic.find_related_pixel()
+                #pic.find_related_pixel()
                                             
 class Mosaic(models.Model):
     name = models.CharField(max_length=255, blank=True)
@@ -281,7 +281,7 @@ class InstaPic(models.Model):
                     print 'set pixel %s with delta %s' % (pixel_asso.id,delta_e)
                     pixel_asso.pic = self
                     pixel_asso.save()
-                    self.add_to_fake_mosaic(mosaic, pixel_asso)
+                    #self.add_to_fake_mosaic(mosaic, pixel_asso)
         self.save()
         
     def has_pixel(self):
