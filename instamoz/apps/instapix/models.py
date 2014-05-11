@@ -169,20 +169,21 @@ class Mosaic(models.Model):
                     print i
                     if j<height:
                         hexaColor = struct.pack('BBB',*pixels[i][j]).encode('hex')
-                        try:
-                            pix = Pixel.objects.get(x=coorX,y=coorY,mosaic=self)
-                            print "update pixel %s" % pix.id   
-                        except Pixel.DoesNotExist:
-                            #self.stdout.write('Add pixel %s,%s' % (coorX, coorY))
-                            print "add pixel"
-                            pix = Pixel.objects.create(x=coorX,y=coorY,mosaic=self)
-                        
-                        #self.stdout.write('Update pixel %s,%s with color : %s' % (coorX, coorY, hexaColor))
-                        pix.color = hexaColor
-                        pix.r_color = pixels[i][j][0]
-                        pix.g_color = pixels[i][j][1]
-                        pix.b_color = pixels[i][j][2]
-                        pix.save()
+                        if hexaColor != 'ffffff':
+                            try:
+                                pix = Pixel.objects.get(x=coorX,y=coorY,mosaic=self)
+                                print "update pixel %s" % pix.id
+                            except Pixel.DoesNotExist:
+                                #self.stdout.write('Add pixel %s,%s' % (coorX, coorY))
+                                print "add pixel"
+                                pix = Pixel.objects.create(x=coorX,y=coorY,mosaic=self)
+
+                            #self.stdout.write('Update pixel %s,%s with color : %s' % (coorX, coorY, hexaColor))
+                            pix.color = hexaColor
+                            pix.r_color = pixels[i][j][0]
+                            pix.g_color = pixels[i][j][1]
+                            pix.b_color = pixels[i][j][2]
+                            pix.save()
                     j=j+pixelSize
                     coorY=coorY+pixelSize
             i=i+pixelSize
@@ -281,7 +282,7 @@ class InstaPic(models.Model):
                     print 'set pixel %s with delta %s' % (pixel_asso.id,delta_e)
                     pixel_asso.pic = self
                     pixel_asso.save()
-                    #self.add_to_fake_mosaic(mosaic, pixel_asso)
+                    self.add_to_fake_mosaic(mosaic, pixel_asso)
         self.save()
         
     def has_pixel(self):
