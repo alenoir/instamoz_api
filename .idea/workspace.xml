@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8061ef50-968c-420a-b0ad-610d5dce290d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="instamoz.iws" />
@@ -46,15 +45,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="50" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="gunicorn_django" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/gunicorn_django">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,11 +74,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mosaic_detail.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mosaic_detail.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="165" selection-start="221" selection-end="221" vertical-scroll-proportion="0.066815145" vertical-offset="0" max-vertical-offset="449">
+            <state line="2" column="165" selection-start="221" selection-end="221" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="180">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createfakemosaic.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/management/commands/createfakemosaic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+              <folding>
+                <marker date="1399796181000" expanded="true" signature="9:156" placeholder="import ..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,6 +163,7 @@
         <option value="$PROJECT_DIR$/instamoz/apps/instapix/models.py" />
         <option value="$PROJECT_DIR$/instamoz/urls.py" />
         <option value="$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html" />
+        <option value="$PROJECT_DIR$/instamoz/apps/instapix/management/commands/createfakemosaic.py" />
       </list>
     </option>
   </component>
@@ -771,15 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/management/commands/createfakemosaic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/management/commands/getinstagrampics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="510">
@@ -897,8 +890,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/templates/mosaic_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="165" selection-start="221" selection-end="221" vertical-scroll-proportion="0.066815145" vertical-offset="0" max-vertical-offset="449">
+        <state line="2" column="165" selection-start="221" selection-end="221" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="180">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/management/commands/createfakemosaic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <folding>
+            <marker date="1399796181000" expanded="true" signature="9:156" placeholder="import ..." />
+          </folding>
         </state>
       </provider>
     </entry>
