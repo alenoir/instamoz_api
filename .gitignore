@@ -3,7 +3,7 @@
 *.pyc
 local_settings.py
 *.sqlite3
-static/media
+nstamoz/static/media
 .idea
 venv
 staticfiles
