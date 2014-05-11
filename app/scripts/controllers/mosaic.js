@@ -12,4 +12,8 @@ angular.module('instamozApp')
     $http.get('http://instamoz.alenoir.com/mosaics/13/').success(function(data) {
       $scope.mosaic = data;
     });
+
+    $http.get('http://instamoz.alenoir.com/mosaics/13/pixels').success(function(data) {
+      $scope.pixels = data;
+    });
   });

@@ -1,1 +1,8 @@
 {{mosaic.name}}
+
+<div id="mosaic_wrapper">
+    {% for pixel in pixels %}
+        <div style="position:absolute; left:{{ pixel.x }}px; top:{{ pixel.y }}px; width:{{ mosaic.pixel_size }}:"></div>
+    {% endfor %}
+    <img src="{{mosaic.fake_image}}" />
+</div>

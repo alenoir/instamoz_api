@@ -12,7 +12,7 @@ class PixelSerializer(serializers.ModelSerializer):
     pic = InstaPicSerializer()
     class Meta:
         model = Pixel
-        fields = ('id', 'x', 'y', 'pic')
+        fields = ('id', 'x', 'y', 'pic', 'color')
         
 class TagSerializer(serializers.ModelSerializer):
     class Meta:
@@ -24,4 +24,4 @@ class MosaicSerializer(serializers.ModelSerializer):
     fake_image = serializers.Field(source='fake_image')
     class Meta:
         model = Mosaic
-        fields = ('id', 'name', 'tags', 'location_lat', 'location_lng', 'fake_image')
+        fields = ('id', 'name', 'tags', 'location_lat', 'location_lng', 'fake_image', 'pixel_size')
