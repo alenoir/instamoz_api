@@ -139,6 +139,9 @@ class Mosaic(models.Model):
     
     def pixel_associate_count(self):
         return self.pixels.filter(pic__isnull=False).count()
+
+    def fake_image(self):
+        return settings.DOMAIN_URL + settings.MEDIA_URL +  'mosaic/bg_%s.jpg' % self.id
         
     def percent_complete(self):
         if self.pixels.all().count() > 0:

@@ -6,9 +6,11 @@ from django.http import HttpResponse
 from instagram.client import InstagramAPI
 from django.conf import settings
 from rest_framework import generics
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
-from instamoz.apps.instapix.models import Mosaic, Subscription
-from instamoz.apps.instapix.serializer import MosaicSerializer
+from instamoz.apps.instapix.models import Mosaic, Subscription, Pixel
+from instamoz.apps.instapix.serializer import MosaicSerializer, PixelSerializer
 
 api = InstagramAPI(client_id=settings.INSTAGRAM_CONFIG['client_id'], client_secret=settings.INSTAGRAM_CONFIG['client_secret'])
 
@@ -61,3 +63,9 @@ class MosaicList(generics.ListCreateAPIView):
 class MosaicDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Mosaic.objects.all()
     serializer_class = MosaicSerializer
+
+class MosaicDetailPixel(APIView):
+    def get(self, request, pk, format=None):
+        pixels = Pixel.objects.filter(mosaic__id=pk)
+        serializer = PixelSerializer(pixels, many=True)
+        return Response(serializer.data)

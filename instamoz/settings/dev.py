@@ -22,3 +22,5 @@ if environ.has_key('DATABASE_URL'):
         'HOST': url.hostname,
         'PORT': url.port,
     }
+
+DOMAIN_URL = 'http://127.0.0.1:8000'

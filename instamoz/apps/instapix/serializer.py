@@ -21,7 +21,7 @@ class TagSerializer(serializers.ModelSerializer):
         
 class MosaicSerializer(serializers.ModelSerializer):
     tags = TagSerializer(many=True)
-    pixels = PixelSerializer(many=True)
+    fake_image = serializers.Field(source='fake_image')
     class Meta:
         model = Mosaic
-        fields = ('id', 'name', 'tags', 'location_lat', 'location_lng', 'pixels')
+        fields = ('id', 'name', 'tags', 'location_lat', 'location_lng', 'fake_image')

@@ -28,3 +28,5 @@ INSTAGRAM_CONFIG = {
     'client_secret': '0d475653225f4b2188337a721d4e3a5d',
     'redirect_uri': 'http://instamoz.alenoir.com/realtime-instagram/'
 }
+
+DOMAIN_URL = 'http://instamoz.alenoir.com'
