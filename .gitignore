@@ -1,9 +1,14 @@
+node_modules
+dist
+.tmp
+.sass-cache
+app/bower_components
 *.log
 *.pot
 *.pyc
 local_settings.py
 *.sqlite3
-nstamoz/static/media
+instamoz/static/media
 .idea
 venv
 staticfiles
