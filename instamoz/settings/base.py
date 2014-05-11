@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     
     'rest_framework',
     'south',
+    'corsheaders',
 
     'instamoz.apps.instapix',
 )
@@ -49,10 +50,13 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     #'django.middleware.csrf.CsrfViewMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'instamoz.urls'
 
@@ -79,7 +83,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
 
-print MEDIA_ROOT
 INSTAGRAM_CONFIG = {
     'client_id': '7ba882f721c4412cadb351f29ba8109f',
     'client_secret': '0d475653225f4b2188337a721d4e3a5d',
