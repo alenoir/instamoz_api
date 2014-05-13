@@ -1,6 +1,6 @@
 {{mosaic.name}}
 
 <div id="mosaic_wrapper">
-    <div ng-repeat="pixel in pixels" style="position:absolute; left:{{ pixel.x }}px; top:{{ pixel.y }}px; width:{{ mosaic.pixel_size }}; height:{{ mosaic.pixel_size }}; background:#{{ pixel.color }};"></div>
+    <div ng-repeat="pixel in pixels" style="position:absolute; left:{{ pixel.y }}px; top:{{ pixel.x }}px; width:{{ mosaic.pixel_size }}px; height:{{ mosaic.pixel_size }}px; background:#{{ pixel.color }};"></div>
     <img src="{{mosaic.fake_image}}" />
 </div>

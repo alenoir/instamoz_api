@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8061ef50-968c-420a-b0ad-610d5dce290d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instamoz/apps/instapix/models.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/mosaic/show.html" afterPath="$PROJECT_DIR$/app/views/mosaic/show.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instamoz/apps/instapix/views.py" afterPath="$PROJECT_DIR$/instamoz/apps/instapix/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="instamoz.iws" />
@@ -58,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="77" selection-start="2283" selection-end="2283" vertical-scroll-proportion="0.73273945" vertical-offset="691" max-vertical-offset="1140">
+            <state line="68" column="77" selection-start="2283" selection-end="2283" vertical-scroll-proportion="-13.16" vertical-offset="691" max-vertical-offset="1140">
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -69,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="273" column="67" selection-start="11429" selection-end="11454" vertical-scroll-proportion="-2.0784314" vertical-offset="3989" max-vertical-offset="5265">
+            <state line="284" column="0" selection-start="11969" selection-end="12177" vertical-scroll-proportion="0.66097564" vertical-offset="3989" max-vertical-offset="5265">
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -158,13 +159,13 @@
         <option value="$PROJECT_DIR$/instamoz/settings/prod.py" />
         <option value="$PROJECT_DIR$/instamoz/apps/instapix/management/commands/createfakemosaic.py" />
         <option value="$PROJECT_DIR$/instamoz/apps/instapix/management/commands/parsemosaics.py" />
-        <option value="$PROJECT_DIR$/instamoz/apps/instapix/models.py" />
         <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/mosaic.js" />
         <option value="$PROJECT_DIR$/app/views/mosaic/show.html" />
         <option value="$PROJECT_DIR$/instamoz/apps/instapix/serializer.py" />
         <option value="$PROJECT_DIR$/instamoz/apps/instapix/views.py" />
+        <option value="$PROJECT_DIR$/instamoz/apps/instapix/models.py" />
       </list>
     </option>
   </component>
@@ -473,7 +474,11 @@
       <created>1399826703775</created>
       <updated>1399826703775</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="api changes&#10;">
+      <created>1399827082405</created>
+      <updated>1399827082405</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -914,18 +919,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/models.py">
+    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="273" column="67" selection-start="11429" selection-end="11454" vertical-scroll-proportion="-2.0784314" vertical-offset="3989" max-vertical-offset="5265">
+        <state line="68" column="77" selection-start="2283" selection-end="2283" vertical-scroll-proportion="-13.16" vertical-offset="691" max-vertical-offset="1140">
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/views.py">
+    <entry file="file://$PROJECT_DIR$/instamoz/apps/instapix/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="77" selection-start="2283" selection-end="2283" vertical-scroll-proportion="0.73273945" vertical-offset="691" max-vertical-offset="1140">
+        <state line="284" column="0" selection-start="11969" selection-end="12177" vertical-scroll-proportion="0.66097564" vertical-offset="3989" max-vertical-offset="5265">
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
