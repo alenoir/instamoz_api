@@ -281,11 +281,13 @@ class InstaPic(models.Model):
                         delta_e = delta_e_new
                         pixel_asso = pixel
                 print 'minimum delta_e %s' % delta_e
-                #if delta_e < 25:
-                print 'set pixel %s with delta %s' % (pixel_asso.id,delta_e)
-                pixel_asso.pic = self
-                pixel_asso.save()
-                self.add_to_fake_mosaic(mosaic, pixel_asso)
+                
+                if pixel_asso:
+	                if delta_e < 25:
+		                print 'set pixel %s with delta %s' % (pixel_asso.id,delta_e)
+		                pixel_asso.pic = self
+		                pixel_asso.save()
+		                self.add_to_fake_mosaic(mosaic, pixel_asso)
         self.save()
         
     def has_pixel(self):
