@@ -1,9 +1,11 @@
-Django==1.6.2
+Django==1.6.5
 Markdown==2.4
+Pillow==2.5.1
 South==0.8.4
 colormath==1.0.9
 dj-database-url==0.3.0
 dj-static==0.0.5
+django-cors-headers==0.12
 django-filter==0.7
 django-stdimage==0.5.1
 django-toolbelt==0.0.1
